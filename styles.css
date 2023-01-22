@@ -118,6 +118,7 @@ nav li:hover {
   justify-content: center;
   align-items: center;
   background-image: url("assets/background.jpg");
+  background-size: cover;
   color: #f9f9f9;
 }
 
