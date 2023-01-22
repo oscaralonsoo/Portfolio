@@ -1,0 +1,201 @@
+@font-face {
+  font-family: Montserrat;
+  src: url(fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+  font-family: Montserrat-Bold;
+  src: url(fonts/Montserrat-Bold.ttf);
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-family: Roboto-Bold;
+  src: url(fonts/Roboto-Bold.ttf);
+}
+
+@font-face {
+  font-family: Ubuntu-Bold;
+  src: url(fonts/UbuntuMono-Bold.ttf);
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: Roboto;
+}
+
+h1, h2 {
+  font-family: Roboto-Bold;
+  font-size: 80px;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-family: Ubuntu-Bold;
+  font-size: 35px;
+}
+
+p {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 35px;
+  border-radius: 5px;
+  background-color: rgb(36, 181, 149);
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.button:hover {
+  transition: 0.2s;
+  color: #cecece;
+  background-color: rgb(19, 106, 87);
+}
+
+nav {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  justify-content: right;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  margin: 20px;
+  gap: 20px;
+  font-size: 13px;
+  list-style-type: none;
+  color: #ffffff;
+}
+
+nav li {
+  cursor: pointer;
+}
+
+nav li:hover {
+  opacity: 0.5;
+}
+
+.icon {
+  width: 20px;
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(200deg) brightness(104%) contrast(103%);
+}
+
+.section {
+  width: 100vw;
+  height: 100vh;
+}
+
+.presentation {
+  background-image: url("assets/presentation_bg.jpg");
+}
+
+.about {
+  background-color: #11171E;
+  color: #f9f9f9;
+}
+
+.work {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+  background-color: #ededfa;
+  color: #ffffff;
+}
+
+.contact {
+  display: flex;
+  background-color: #11171E;
+  color: #ededfa;
+}
+
+.align_left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 55%;
+  height: 100%;
+}
+
+.align_right{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  background-color: red;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  width: 500px;
+}
+
+.project_container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+}
+
+.project {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 450px;
+  height: 260px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.project img{
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+}
+
+.work h2 {
+  color: #11171E;
+}
+
+.project_title {
+  visibility: hidden;
+  position: absolute;
+  color: #11171E;
+}
+
+.project:hover img{
+  filter: invert(0%) sepia(0%) saturate(5%) hue-rotate(256deg) brightness(88%) contrast(100%) opacity(0.6);
+}
+
+.project:hover h2{
+  visibility: visible;
+}
+
+.mail {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
