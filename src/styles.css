@@ -1,0 +1,330 @@
+@font-face {
+    font-family: Gontserrat-ExtraBold;
+    src: url(fonts/Gontserrat-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: Gontserrat;
+    src: url(fonts/Gontserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: Gontserrat-SemiBold;
+    src: url(fonts/Gontserrat-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: Gontserrat-Light;
+    src: url(fonts/Gontserrat-Light.ttf);
+}
+
+@font-face {
+    font-family: Gontserrat-Medium;
+    src: url(fonts/Gontserrat-Medium.ttf);
+}
+
+@font-face {
+    font-family: Gontserrat-Bold;
+    src: url(fonts/Gontserrat-Bold.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(13, 18, 36);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    background-color: rgba(13, 18, 36, 0.555);
+    backdrop-filter: blur(7px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.nav__content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    margin: 0 21%;
+    align-items: center;
+}
+
+.nav__content a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav__index a {
+    height: 100%;
+    align-content: center;
+    padding: 0 5px;
+}
+
+.nav__index a:hover {
+    box-shadow: inset 0 -2px 0 0 rgb(158, 87, 240);
+}
+
+.nav__index {
+    display: flex;
+    align-items: center;
+    font-family: Gontserrat-SemiBold;
+    gap: 15px;
+    height: 100%;
+    list-style-type: none;
+
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+
+.nav__index li {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.nav__name {
+    font-family: Gontserrat-ExtraBold;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+.nav__social-media {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+    list-style-type: none;
+}
+
+.nav__social-media img {
+    width: 27px;
+    cursor: pointer;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 21%;
+    padding-top: 270px;
+
+    background-image: url("hero.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.hero__content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.hero__greeting {
+    font-family: Gontserrat-SemiBold;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    color: white;
+}
+
+.hero__name {
+    background: linear-gradient(to right, rgb(158, 87, 240), rgb(68, 3, 143));
+    background-size: cover;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    font-family: Gontserrat-ExtraBold;
+    font-size: 4.5rem;
+    line-height: 1;
+}
+
+.hero__position {
+    font-family: Gontserrat-Light;
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    color: white;
+}
+
+.hero__resume-button {
+    font-family: Gontserrat-Medium;
+}
+
+.hero__projects-button {
+    font-family: Gontserrat-Medium;
+}
+
+.hero__pfp {
+    border-radius: 10px;
+    height: 250px;
+}
+
+.hero__button-panel {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.hero__button-panel a{
+    text-decoration: none;
+    color: white;
+    padding: 13px 22px;
+    border-radius: 5px;
+
+    font-family: Gontserrat;
+    font-size: 0.83rem;
+    line-height: 1.1rem;
+}
+
+.hero__resume-button {
+    background: linear-gradient(to bottom right, rgb(158, 87, 240), rgb(68, 3, 143));
+}
+
+.hero__projects-button {
+    background-color: transparent;
+    box-shadow: inset 0 0 0 2px rgb(158, 87, 240);
+}
+
+.hero__projects-button:hover {
+    background: linear-gradient(to bottom right, rgb(158, 87, 240), rgb(68, 3, 143));
+    box-shadow: inset 0 0 0 0 transparent;
+}
+
+.summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+    margin: 0 21%;
+    margin-top: 160px;
+}
+
+.summary article {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.summary__title {
+    font-family: Gontserrat-SemiBold;
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    color: white;
+}
+
+.summary__description {
+    font-family: Gontserrat;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    color: rgb(208, 186, 233);
+}
+
+.projects {
+    margin: 0 21%;
+    margin-top: 160px;
+    padding-top: 70px;
+    
+    border-top: 1px solid #25213b;
+
+    background-image: url("section.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.projects__title {
+    font-family: Gontserrat-SemiBold;
+    font-size: 3rem;
+    line-height: 1rem;
+    color: white;
+}
+
+.projects__grid {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 12px;
+}
+
+.projects__grid article {
+    height: 220px;
+    background-color: rgba(91, 83, 92, 0.377);
+    border-radius: 8px;
+}
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+    padding: 0 21%;
+    height: 100px;
+    border-top: 1px solid #353951;
+
+    font-family: Gontserrat;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    color: white;
+}
+
+.footer__credits a {
+    text-decoration: none;
+    color: rgb(158, 87, 240);
+}
+
+.footer__git {
+    display: flex;
+    gap: 10px;
+}
+
+.footer__git a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer__git a:hover {
+    color: rgb(158, 87, 240);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+::-webkit-scrollbar {
+    width: 17px;
+}
+
+::-webkit-scrollbar-track {
+    background: #2c2c2c;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #555;
+    border: 2px solid #2c2c2c;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #888;
+}
