@@ -77,7 +77,7 @@ nav {
 .nav__index {
     display: flex;
     align-items: center;
-    font-family: Gontserrat-SemiBold;
+    font-family: Gontserrat;
     gap: 15px;
     height: 100%;
     list-style-type: none;
@@ -258,7 +258,6 @@ header {
     border-radius: 8px;
 }
 
-
 footer {
     display: flex;
     justify-content: space-between;
@@ -292,6 +291,7 @@ footer {
 .footer__git a:hover {
     color: rgb(158, 87, 240);
 }
+
 
 
 
