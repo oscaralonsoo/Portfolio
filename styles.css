@@ -172,7 +172,7 @@ header {
     margin-top: 30px;
 }
 
-.hero__button-panel a{
+.hero__button-panel a {
     text-decoration: none;
     color: white;
     padding: 13px 22px;
@@ -230,7 +230,7 @@ header {
     margin: 0 21%;
     margin-top: 160px;
     padding-top: 70px;
-    
+
     border-top: 1px solid #25213b;
 
     background-image: url("section.svg");
@@ -240,7 +240,7 @@ header {
 
 .projects__title {
     font-family: Gontserrat-SemiBold;
-    font-size: 3rem;
+    font-size: 2.8rem;
     line-height: 1rem;
     color: white;
 }
@@ -255,6 +255,14 @@ header {
 .projects__grid article {
     height: 220px;
     background-color: rgba(91, 83, 92, 0.377);
+    border-radius: 8px;
+}
+
+
+.projects article img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     border-radius: 8px;
 }
 
@@ -292,26 +300,67 @@ footer {
     color: rgb(158, 87, 240);
 }
 
+.skills {
+    margin: 0 21%;
+    margin-top: 160px;
+    padding-top: 70px;
+    border-top: 1px solid #25213b;
+    background-image: url("hero.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.skills__title {
+    font-family: Gontserrat-SemiBold;
+    font-size: 2.8rem;
+    line-height: 1rem;
+    color: white;
+}
+.skills__container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    margin-top: 100px;
+    width: 100%;
+    height: 150px;
+    white-space: nowrap;
+}
+.skills__item {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    min-width: 140px;
+    min-height: 130px;
+    background-color: #11152c;
+    border-radius: 8px;
+    position: absolute;
+    transition: opacity 0.5s, left 0.05s linear;
+    border: solid 1px;
+    border-color: #1f223c;
+    transition: 0.1s;
+}
+.skills__item:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    border-color: #8357ea;
+}
+.skills__item img {
+    width: auto;
+    height: 50px;
+}
+.skills__item-title {
+    font-family: Gontserrat-Light;
+    font-size: 1.1rem;
+    line-height: 2rem;
+    color: white;
+    text-align: center;
+}
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* Scrollbar Styling */
 ::-webkit-scrollbar {
     width: 17px;
 }
