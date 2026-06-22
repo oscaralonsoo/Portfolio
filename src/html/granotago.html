@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GranotaGo — Oscar Alonso</title>
+  <link href="../css/styles.css" rel="stylesheet">
+  <link href="../css/project.css" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="project-nav">
+    <div class="project-nav__content">
+      <a href="../html/home.html" class="nav__name">Oscar Alonso</a>
+      <ul class="project-nav__projects">
+        <li><a href="../html/son-of-ithaca.html" class="project-nav__link">Son Of Ithaca</a></li>
+        <li><a href="../html/odossea.html" class="project-nav__link">Odossea</a></li>
+        <li><a href="../html/the-apprentice.html" class="project-nav__link">The Apprentice</a></li>
+        <li><a href="../html/granotago.html" class="project-nav__link project-nav__link--active">GranotaGo</a></li>
+        <li><a href="../html/macca.html" class="project-nav__link">Macca</a></li>
+        <li><a href="../html/bubble-bobble.html" class="project-nav__link">Bubble Bobble</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="project-hero">
+    <img src="../../public/projects/hero/granotaGo.png" alt="GranotaGo banner" class="project-hero__banner">
+    <div class="project-hero__overlay"></div>
+    <div class="project-hero__content">
+      <div class="project-hero__text-group">
+        <h1 class="project-hero__title">GranotaGo</h1>
+      </div>
+      <div class="project-hero__meta">
+        <span class="project-hero__tag">Unity 3D</span>
+        <span class="project-hero__tag">Puzzle</span>
+        <span class="project-hero__tag">C#</span>
+      </div>
+      <div class="project-hero__button-panel">
+        <a href="https://oalonsoo.itch.io/granotago" target="_blank" class="project-btn project-btn--primary">Play Game</a>
+        <a href="https://github.com/oscaralonsoo" target="_blank" class="project-btn project-btn--secondary">
+          View Github
+        </a>
+      </div>
+    </div>
+    <div class="project-hero__scroll-indicator" id="scrollArrow">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="6 9 12 15 18 9"></polyline>
+      </svg>
+    </div>
+  </header>
+
+  <main class="project-main">
+
+    <section class="project-section project-overview">
+      <div class="project-section__inner">
+        <h2 class="project-section__title">Overview</h2>
+        <p class="project-overview__description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+          ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+          fugiat nulla pariatur.
+        </p>
+        <div class="project-overview__stats">
+          <div class="project-stat">
+            <span class="project-stat__value">4</span>
+            <span class="project-stat__label">Team members</span>
+          </div>
+          <div class="project-stat">
+            <span class="project-stat__value">5<span class="project-stat__unit"> days</span></span>
+            <span class="project-stat__label">Development time</span>
+          </div>
+          <div class="project-stat">
+            <span class="project-stat__value">2025</span>
+            <span class="project-stat__label">Year</span>
+          </div>
+          <div class="project-stat">
+            <span class="project-stat__value">Unity</span>
+            <span class="project-stat__label">Engine</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-section project-role">
+      <div class="project-section__inner">
+        <h2 class="project-section__title">My Role</h2>
+        <div class="project-role__content">
+          <div class="project-role__badge">Gameplay Programmer</div>
+          <p class="project-role__description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-section project-trailer" id="trailerSection">
+      <div class="project-section__inner">
+        <h2 class="project-section__title">Trailer</h2>
+
+        <div class="video-player" id="videoPlayer">
+          <video class="video-player__video" id="mainVideo" preload="metadata"
+            src="../../public/videos/granotago-trailer.mp4">
+          </video>
+          <div class="video-player__overlay" id="videoOverlay">
+            <button class="video-player__big-play" id="bigPlayBtn" aria-label="Reproducir">
+              <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8 5.14v14l11-7-11-7z" />
+              </svg>
+            </button>
+          </div>
+          <div class="video-player__controls" id="videoControls">
+            <div class="video-player__progress-area">
+              <div class="video-player__progress-bar" id="progressBar">
+                <div class="video-player__progress-fill" id="progressFill"></div>
+                <div class="video-player__progress-thumb" id="progressThumb"></div>
+              </div>
+            </div>
+
+            <div class="video-player__bottom">
+              <div class="video-player__left">
+                <button class="video-player__btn" id="playPauseBtn" aria-label="Play / Pause">
+                  <svg class="icon-play" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M8 5.14v14l11-7-11-7z" />
+                  </svg>
+                  <svg class="icon-pause" viewBox="0 0 24 24" fill="currentColor" style="display:none">
+                    <rect x="6" y="4" width="4" height="16" />
+                    <rect x="14" y="4" width="4" height="16" />
+                  </svg>
+                </button>
+                <span class="video-player__time" id="timeDisplay">0:00 / 0:00</span>
+              </div>
+              <div class="video-player__right">
+                <div class="video-player__volume-group">
+                  <button class="video-player__btn" id="muteBtn" aria-label="Mute">
+                    <svg class="icon-vol-on" viewBox="0 0 24 24" fill="currentColor">
+                      <path
+                        d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02z" />
+                    </svg>
+                    <svg class="icon-vol-off" viewBox="0 0 24 24" fill="currentColor" style="display:none">
+                      <path
+                        d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z" />
+                    </svg>
+                  </button>
+                  <div class="video-player__volume-bar" id="volumeBar">
+                    <div class="video-player__volume-fill" id="volumeFill" style="width:100%"></div>
+                  </div>
+                </div>
+                <button class="video-player__btn" id="fullscreenBtn" aria-label="Fullscreen">
+                  <svg class="icon-fs-enter" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z" />
+                  </svg>
+                  <svg class="icon-fs-exit" viewBox="0 0 24 24" fill="currentColor" style="display:none">
+                    <path d="M5 16h3v3h2v-5H5v2zm3-8H5v2h5V5H8v3zm6 11h2v-3h3v-2h-5v5zm2-11V5h-2v5h5V8h-3z" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="project-section project-tasks">
+      <div class="project-section__inner">
+        <h2 class="project-section__title">What I built</h2>
+
+        <div class="project-task">
+          <div class="project-task__image">
+            <img src="../../public/projects/task-placeholder.png" alt="Task screenshot">
+          </div>
+          <div class="project-task__text">
+            <h3 class="project-task__title">Player Controller</h3>
+            <p class="project-task__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+              ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+        </div>
+
+        <div class="project-task project-task--reverse">
+          <div class="project-task__image">
+            <img src="../../public/projects/task-placeholder.png" alt="Task screenshot">
+          </div>
+          <div class="project-task__text">
+            <h3 class="project-task__title">Enemy AI</h3>
+            <p class="project-task__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+              ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+        </div>
+
+        <div class="project-task">
+          <div class="project-task__image">
+            <img src="../../public/projects/task-placeholder.png" alt="Task screenshot">
+          </div>
+          <div class="project-task__text">
+            <h3 class="project-task__title">Level System</h3>
+            <p class="project-task__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+              ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <section class="project-section project-cta">
+    <div class="project-section__inner">
+      <div class="project-cta__buttons">
+        <a href="https://oalonsoo.itch.io/granotago" target="_blank" class="project-btn project-btn--primary">Play on
+          itch.io</a>
+        <a href="https://github.com/oscaralonsoo/GranotaGo" target="_blank" class="project-btn project-btn--secondary">View on
+          GitHub</a>
+      </div>
+      <div class="project-cta__nav">
+        <a href="the-apprentice.html" class="project-cta__prev">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="15 18 9 12 15 6" />
+          </svg>
+          The Apprentice
+        </a>
+        <a href="../html/home.html#projects" class="project-cta__home">All projects</a>
+        <a href="macca.html" class="project-cta__next">
+          Macca
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="9 18 15 12 9 6" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</body>
+
+<script src="../js/scrollArrow.js"></script>
+<script src="../js/videoPlayer.js"></script>
+
+</html>
