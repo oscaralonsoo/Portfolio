@@ -5,21 +5,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Apprentice — Oscar Alonso</title>
-  <link href="../css/styles.css" rel="stylesheet">
-  <link href="../css/project.css" rel="stylesheet">
+  <link href="src/css/styles.css" rel="stylesheet">
+  <link href="src/css/project.css" rel="stylesheet">
 </head>
 
 <body>
   <nav class="project-nav">
     <div class="project-nav__content">
-      <a href="../html/home.html" class="nav__name">Oscar Alonso</a>
+      <a href="index.html" class="nav__name">Oscar Alonso</a>
       <ul class="project-nav__projects">
-        <li><a href="../html/son-of-ithaca.html" class="project-nav__link">Son Of Ithaca</a></li>
-        <li><a href="../html/odossea.html" class="project-nav__link">Odossea</a></li>
-        <li><a href="../html/the-apprentice.html" class="project-nav__link project-nav__link--active">The Apprentice</a></li>
-        <li><a href="../html/granotago.html" class="project-nav__link">GranotaGo</a></li>
-        <li><a href="../html/macca.html" class="project-nav__link">Macca</a></li>
-        <li><a href="../html/bubble-bobble.html" class="project-nav__link">Bubble Bobble</a></li>
+        <li><a href="son-of-ithaca.html" class="project-nav__link">Son Of Ithaca</a></li>
+        <li><a href="odossea.html" class="project-nav__link">Odossea</a></li>
+        <li><a href="the-apprentice.html" class="project-nav__link project-nav__link--active">The Apprentice</a></li>
+        <li><a href="granotago.html" class="project-nav__link">GranotaGo</a></li>
+        <li><a href="macca.html" class="project-nav__link">Macca</a></li>
+        <li><a href="bubble-bobble.html" class="project-nav__link">Bubble Bobble</a></li>
       </ul>
     </div>
   </nav>
@@ -30,17 +30,18 @@
     <div class="project-hero__content">
       <div class="project-hero__text-group">
         <h1 class="project-hero__title">The Apprentice</h1>
+        <p class="project-hero__subtitle">Nota final 10 · Feedback de Conrad Roset e industria · Pangolin Studios</p>
       </div>
       <div class="project-hero__meta">
-        <span class="project-hero__tag">Unity 3D</span>
-        <span class="project-hero__tag">Puzzle</span>
-        <span class="project-hero__tag">C#</span>
+        <span class="project-hero__tag">C++</span>
+        <span class="project-hero__tag">SDL2</span>
+        <span class="project-hero__tag">Box2D</span>
+        <span class="project-hero__tag">Metroidvania</span>
+        <span class="project-hero__tag">Lead Programmer</span>
       </div>
       <div class="project-hero__button-panel">
         <a href="https://oalonsoo.itch.io/the-apprentice" target="_blank" class="project-btn project-btn--primary">Play Game</a>
-        <a href="https://github.com/oscaralonsoo" target="_blank" class="project-btn project-btn--secondary">
-          View Github
-        </a>
+        <a href="https://github.com/oscaralonsoo/TheApprentice" target="_blank" class="project-btn project-btn--secondary">View Github</a>
       </div>
     </div>
     <div class="project-hero__scroll-indicator" id="scrollArrow">
@@ -53,22 +54,27 @@
 
   <main class="project-main">
 
+    <!-- OVERVIEW -->
     <section class="project-section project-overview">
       <div class="project-section__inner">
         <h2 class="project-section__title">Overview</h2>
         <p class="project-overview__description">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et
-          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-          ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-          fugiat nulla pariatur.
+          The Apprentice es un Metroidvania de exploración y combate donde juegas como un slime nacido de
+          un cristal roto, perdido en un bosque corrompido por magia. A medida que exploras el mundo,
+          derrotar enemigos debilitados te otorga nuevas habilidades de movimiento —saltos, dashes, slides,
+          ganchos, wall-runs— que abren zonas antes inaccesibles. El juego fue desarrollado en <strong>C++
+          y SDL2</strong> con física Box2D y mapas en Tiled, en colaboración entre el grado de Desarrollo
+          de Videojuegos y el grado de Diseño, Animación y Arte Digital de la UPC·CITM. En la presentación
+          final recibimos feedback de <strong>Conrad Roset y otros profesionales de la industria</strong>,
+          y obtuvimos una <strong>nota de 10</strong> en la entrega.
         </p>
         <div class="project-overview__stats">
           <div class="project-stat">
-            <span class="project-stat__value">4</span>
+            <span class="project-stat__value">18</span>
             <span class="project-stat__label">Team members</span>
           </div>
           <div class="project-stat">
-            <span class="project-stat__value">5<span class="project-stat__unit"> days</span></span>
+            <span class="project-stat__value">5<span class="project-stat__unit"> months</span></span>
             <span class="project-stat__label">Development time</span>
           </div>
           <div class="project-stat">
@@ -76,33 +82,39 @@
             <span class="project-stat__label">Year</span>
           </div>
           <div class="project-stat">
-            <span class="project-stat__value">Unity</span>
+            <span class="project-stat__value">C++ / SDL2</span>
             <span class="project-stat__label">Engine</span>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- MY ROLE -->
     <section class="project-section project-role">
       <div class="project-section__inner">
-        <h2 class="project-section__title">My Role</h2>
+        <h2 class="project-section__title">Mi rol</h2>
         <div class="project-role__content">
-          <div class="project-role__badge">Gameplay Programmer</div>
+          <div class="project-role__badge">Lead Programmer · Lead Designer · Tech Art</div>
           <p class="project-role__description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+            Empecé como Lead Programmer coordinando a 3 desarrolladores, pero el proyecto me llevó
+            a asumir más responsabilidad: ante problemas en el departamento de diseño, tomé las
+            riendas del game design y el level design. En arte actué como dirección artística técnica
+            —filtro entre lo que el equipo de arte producía y lo que el motor podía integrar— sin
+            desplazar al lead de arte, sino complementándolo. En paralelo, programé una parte
+            sustancial del juego: sistemas de IA, narrativa, entorno y el boss final.
           </p>
         </div>
       </div>
     </section>
 
+    <!-- TRAILER -->
     <section class="project-section project-trailer" id="trailerSection">
       <div class="project-section__inner">
         <h2 class="project-section__title">Trailer</h2>
 
         <div class="video-player" id="videoPlayer">
           <video class="video-player__video" id="mainVideo" preload="metadata"
-            src="../../public/videos/the-apprentice-trailer.mp4">
+            src="../../public/projects/videos/the-apprentice-trailer.mp4">
           </video>
           <div class="video-player__overlay" id="videoOverlay">
             <button class="video-player__big-play" id="bigPlayBtn" aria-label="Reproducir">
@@ -118,16 +130,12 @@
                 <div class="video-player__progress-thumb" id="progressThumb"></div>
               </div>
             </div>
-
             <div class="video-player__bottom">
               <div class="video-player__left">
                 <button class="video-player__btn" id="playPauseBtn" aria-label="Play / Pause">
-                  <svg class="icon-play" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M8 5.14v14l11-7-11-7z" />
-                  </svg>
+                  <svg class="icon-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.14v14l11-7-11-7z" /></svg>
                   <svg class="icon-pause" viewBox="0 0 24 24" fill="currentColor" style="display:none">
-                    <rect x="6" y="4" width="4" height="16" />
-                    <rect x="14" y="4" width="4" height="16" />
+                    <rect x="6" y="4" width="4" height="16" /><rect x="14" y="4" width="4" height="16" />
                   </svg>
                 </button>
                 <span class="video-player__time" id="timeDisplay">0:00 / 0:00</span>
@@ -136,12 +144,10 @@
                 <div class="video-player__volume-group">
                   <button class="video-player__btn" id="muteBtn" aria-label="Mute">
                     <svg class="icon-vol-on" viewBox="0 0 24 24" fill="currentColor">
-                      <path
-                        d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02z" />
+                      <path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02z" />
                     </svg>
                     <svg class="icon-vol-off" viewBox="0 0 24 24" fill="currentColor" style="display:none">
-                      <path
-                        d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z" />
+                      <path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z" />
                     </svg>
                   </button>
                   <div class="video-player__volume-bar" id="volumeBar">
@@ -160,56 +166,148 @@
             </div>
           </div>
         </div>
-
       </div>
     </section>
 
+    <!-- WHAT I BUILT -->
     <section class="project-section project-tasks">
       <div class="project-section__inner">
-        <h2 class="project-section__title">What I built</h2>
+        <h2 class="project-section__title">Qué programé</h2>
 
+        <!-- TASK 1: NULLWARDEN BOSS -->
         <div class="project-task">
           <div class="project-task__image">
-            <img src="../../public/projects/task-placeholder.png" alt="Task screenshot">
+            <img src="../../public/projects/tasks/apprentice-nullwarden.gif" alt="Nullwarden boss fight">
           </div>
           <div class="project-task__text">
-            <h3 class="project-task__title">Player Controller</h3>
-            <p class="project-task__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-              ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <h3 class="project-task__title">Boss: Nullwarden</h3>
+            <p class="project-task__description">
+              El boss final del juego, programado íntegramente por mí. Alterna entre seis estados:
+              <strong>Idle → Attack → Charge → Impaled → Roar → Death</strong>. En ataque lanza
+              patrones de lanzas horizontales con un hueco calculado para que el jugador pueda
+              esquivar. Tras el ataque, embiste hacia el jugador acelerando; al chocar con un muro
+              queda "impalado" e inmóvil, lanzando lanzas verticales periódicas. Si el cristal que
+              lo sostiene recibe cuatro impactos y se rompe, entra en Roar —empuja al jugador en
+              función de la distancia— y queda vulnerable a muerte. El collider cambia de tamaño
+              dinámicamente según la animación activa.
+            </p>
+            <div class="project-task__tech">
+              <span class="project-task__chip">FSM 6 estados</span>
+              <span class="project-task__chip">Projectile patterns</span>
+              <span class="project-task__chip">Dynamic collider resize</span>
+              <span class="project-task__chip">Distance-based knockback</span>
+            </div>
           </div>
         </div>
 
+        <!-- TASK 2: ENEMY AI -->
         <div class="project-task project-task--reverse">
           <div class="project-task__image">
-            <img src="../../public/projects/task-placeholder.png" alt="Task screenshot">
+            <img src="../../public/projects/tasks/apprentice-enemies.gif" alt="Enemy AI behaviours">
           </div>
           <div class="project-task__text">
-            <h3 class="project-task__title">Enemy AI</h3>
-            <p class="project-task__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-              ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <h3 class="project-task__title">IA de Enemigos</h3>
+            <p class="project-task__description">
+              Programé varios enemigos con comportamientos distintos. <strong>Creebler</strong>
+              patrulla usando una NavigationLayer en Tiled: detecta bordes y muros por tile y
+              cambia de dirección sin pathfinding complejo. <strong>Scurver</strong> y
+              <strong>Bloodrusher</strong> usan A* con heurística Squared para detectar al jugador
+              y embestir; si el jugador esquiva, entran en estado de derrape con fricción progresiva
+              hasta detenerse. Bloodrusher añade aceleración exponencial en la carga y solo muere
+              al impactar contra un muro destructible. <strong>Mireborn</strong> se divide hasta
+              tres veces al recibir daño —Alpha → Beta → Gamma— instanciando versiones más pequeñas
+              con masa y escala reducidas.
+            </p>
+            <div class="project-task__tech">
+              <span class="project-task__chip">A* pathfinding</span>
+              <span class="project-task__chip">NavigationLayer tile detection</span>
+              <span class="project-task__chip">Exponential acceleration</span>
+              <span class="project-task__chip">Split-on-hit instancing</span>
+            </div>
           </div>
         </div>
 
+        <!-- TASK 3: DIALOGUE SYSTEM -->
         <div class="project-task">
           <div class="project-task__image">
-            <img src="../../public/projects/task-placeholder.png" alt="Task screenshot">
+            <img src="../../public/projects/tasks/apprentice-dialogue.gif" alt="Dialogue system">
           </div>
           <div class="project-task__text">
-            <h3 class="project-task__title">Level System</h3>
-            <p class="project-task__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-              ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <h3 class="project-task__title">Sistema de Diálogos y NPCs</h3>
+            <p class="project-task__description">
+              Los diálogos se cargan desde un <code>dialogues.xml</code> con id, speaker y texto.
+              El efecto de escritura muestra caracteres progresivamente según tiempo transcurrido;
+              la primera pulsación de Space lo completa instantáneamente, la segunda avanza al
+              siguiente. El texto se divide en líneas automáticamente según el ancho de la caja
+              con <code>WrapLines()</code>. Los NPCs son sensores Box2D estáticos que activan
+              el diálogo correspondiente al detectar proximidad del jugador, sin colisión física.
+            </p>
+            <div class="project-task__tech">
+              <span class="project-task__chip">XML data parsing</span>
+              <span class="project-task__chip">Typing effect</span>
+              <span class="project-task__chip">Auto line wrap</span>
+              <span class="project-task__chip">Box2D sensor NPCs</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- TASK 4: ENVIRONMENT SYSTEMS -->
+        <div class="project-task project-task--reverse">
+          <div class="project-task__image">
+            <img src="../../public/projects/tasks/apprentice-env.gif" alt="Environment systems">
+          </div>
+          <div class="project-task__text">
+            <h3 class="project-task__title">Sistemas de Entorno e Interacción</h3>
+            <p class="project-task__description">
+              Implementé un sistema de <strong>placas de presión y puertas</strong> que sincroniza
+              grupos por ID: placas visibles abren la puerta solo si todas están activas; placas
+              invisibles usan lógica toggle. Las <strong>cajas empujables</strong> alternan entre
+              cuerpo dinámico y cinemático según si el jugador las empuja, con densidad y gravedad
+              ajustadas para simular peso real. Las <strong>Hidden Zones</strong> se desvanecen con
+              un degradado de borde al detectar al jugador, revelando zonas secretas. El
+              <strong>ParticleManager</strong> genera polvo, luciérnagas, lluvia y nieve según el
+              mapa activo, con spawn adaptado al área visible de cámara y control de frecuencia
+              para no saturar.
+            </p>
+            <div class="project-task__tech">
+              <span class="project-task__chip">Pressure plate system</span>
+              <span class="project-task__chip">Kinematic toggle boxes</span>
+              <span class="project-task__chip">Alpha fade hidden zones</span>
+              <span class="project-task__chip">Scene-aware particles</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- TASK 5: LEVEL DESIGN -->
+        <div class="project-task">
+          <div class="project-task__image">
+            <img src="../../public/projects/tasks/apprentice-levels.png" alt="Level design maps">
+          </div>
+          <div class="project-task__text">
+            <h3 class="project-task__title">Level Design y Postproducción</h3>
+            <p class="project-task__description">
+              Diseñé varios mapas del juego estructurando cada zona con un objetivo claro: parkour
+              de gancho con recompensa en LifePlantMax, bifurcaciones opcionales para contenido
+              narrativo, introducción de enemigos nuevos y obtención de habilidades. En postproducción
+              rediseñé zonas existentes para hacerlas más orgánicas —colocación de tiles de terreno,
+              reubicación de enemigos y colisiones, pulido de imperfecciones— hasta que el juego
+              transmitiera el nivel de acabado que el proyecto merecía.
+            </p>
+            <div class="project-task__tech">
+              <span class="project-task__chip">Tiled map editor</span>
+              <span class="project-task__chip">Ability gating</span>
+              <span class="project-task__chip">Organic terrain polish</span>
+            </div>
           </div>
         </div>
 
       </div>
     </section>
 
+    <!-- PRESENTATION -->
     <section class="project-section project-awards">
       <div class="project-section__inner">
-        <h2 class="project-section__title">Awards & Recognition</h2>
+        <h2 class="project-section__title">Presentación Final</h2>
         <div class="project-awards__list">
           <article class="project-award">
             <div class="project-award__body">
@@ -222,34 +320,33 @@
                   </svg>
                 </div>
                 <div class="project-award__meta">
-                  <h3 class="project-award__title">Top 3 Finalist</h3>
-                  <span class="project-award__event">National Game Developers Showcase</span>
+                  <h3 class="project-award__title">Nota Final 10 · Feedback de Industria</h3>
+                  <span class="project-award__event">Conrad Roset · Pangolin Studios · UPC·CITM</span>
                 </div>
               </div>
-              <p class="project-award__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                exercitation ullamco.</p>
+              <p class="project-award__description">
+                En la presentación final, Conrad Roset y otros profesionales de la industria probaron
+                el juego y dieron feedback positivo sobre el resultado. Nota máxima en la entrega.
+                Un Metroidvania completo con boss, IA variada, narrativa y mundo handcrafted,
+                hecho en C++ y SDL2 desde cero en 5 meses por un equipo de dos grados.
+              </p>
             </div>
             <div class="project-award__photo">
-              <img src="../../public/projects/award-placeholder.png" alt="Foto del evento">
+              <img src="../../public/projects/awards/the-apprentice.png" alt="Foto presentación The Apprentice">
             </div>
           </article>
-
         </div>
       </div>
     </section>
 
-
-
   </main>
 
+  <!-- CTA -->
   <section class="project-section project-cta">
     <div class="project-section__inner">
       <div class="project-cta__buttons">
-        <a href="https://oalonsoo.itch.io/macca" target="_blank" class="project-btn project-btn--primary">Play on
-          itch.io</a>
-        <a href="https://github.com/oscaralonsoo/MaccaPillarsOfGlory" target="_blank" class="project-btn project-btn--secondary">View on
-          GitHub</a>
+        <a href="https://oalonsoo.itch.io/the-apprentice" target="_blank" class="project-btn project-btn--primary">Play on itch.io</a>
+        <a href="https://github.com/oscaralonsoo/TheApprentice" target="_blank" class="project-btn project-btn--secondary">View on GitHub</a>
       </div>
       <div class="project-cta__nav">
         <a href="odossea.html" class="project-cta__prev">
@@ -260,7 +357,7 @@
           Odossea
         </a>
         <a href="../html/home.html#projects" class="project-cta__home">All projects</a>
-        <a href="granotaGo.html" class="project-cta__next">
+        <a href="granotago.html" class="project-cta__next">
           GranotaGo
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
             stroke-linecap="round" stroke-linejoin="round">
