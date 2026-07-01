@@ -32,15 +32,17 @@
         <h1 class="project-hero__title">Odossea</h1>
       </div>
       <div class="project-hero__meta">
+        <span class="project-hero__tag">Soft Body Physics</span>
+        <span class="project-hero__tag">Joint Systems</span>
+        <span class="project-hero__tag">Co-op Local</span>
         <span class="project-hero__tag">Unity 2D</span>
         <span class="project-hero__tag">C#</span>
-        <span class="project-hero__tag">Soft Body Physics</span>
-        <span class="project-hero__tag">Co-op</span>
-        <span class="project-hero__tag">Puzzle</span>
       </div>
       <div class="project-hero__button-panel">
-        <a href="https://torratsgames.itch.io/odossea" target="_blank" class="project-btn project-btn--primary">Play Game</a>
-        <a href="https://github.com/oscaralonsoo/Odossea" target="_blank" class="project-btn project-btn--secondary">View Github</a>
+        <a href="https://torratsgames.itch.io/odossea" target="_blank" class="project-btn project-btn--primary">Play
+          Game</a>
+        <a href="https://github.com/oscaralonsoo/Odossea" target="_blank"
+          class="project-btn project-btn--secondary">View Github</a>
       </div>
     </div>
     <div class="project-hero__scroll-indicator" id="scrollArrow">
@@ -58,12 +60,13 @@
       <div class="project-section__inner">
         <h2 class="project-section__title">Overview</h2>
         <p class="project-overview__description">
-          Odossea es un juego cooperativo local para dos jugadores —mando o teclado— construido sobre un sistema
-          de físicas soft body personalizado en Unity 2D. Bajo el tema "Odisea", diseñamos una mecánica donde
-          la cooperación es literal y física: cada jugador puede disparar parte de su propia masa al compañero,
-          haciéndolo crecer mientras él mismo se encoge. Este intercambio de tamaño es la clave para resolver
-          los puzles del juego. Desarrollado en 7 días por un equipo de 5 personas, ganó el <strong>Premio a
-          la Mejor Tecnología</strong> de la 9ª Gran CITM GameJam, patrocinado por SocialPoint.
+          Odossea es un juego cooperativo local para dos jugadores desarrollado
+          en Unity 2D durante la 9ª Gran CITM GameJam. El proyecto se construyó
+          alrededor de un sistema de físicas soft-body personalizado que permite
+          una mecánica central donde cada jugador puede transferir parte de su
+          propia masa al compañero, haciéndolo crecer mientras él mismo se encoge.
+          Esta interacción genera puzles y desafíos cooperativos basados en el
+          intercambio dinámico de masa.
         </p>
         <div class="project-overview__stats">
           <div class="project-stat">
@@ -91,12 +94,11 @@
       <div class="project-section__inner">
         <h2 class="project-section__title">Mi rol</h2>
         <div class="project-role__content">
-          <div class="project-role__badge">Gameplay Programmer · Physics</div>
+          <div class="project-role__badge">Gameplay & Physics Programmer</div>
           <p class="project-role__description">
-            Junto a otro programador, fui responsable de todo el sistema de físicas: propuse la mecánica de compartir masa como 
-            eje del cooperativo y la implementé desde el diseño hasta el código. 
-            Mi prioridad fue que la física no solo funcionara sino que se sintiera bien con 
-            cada parámetro ajustado a mano para que la deformación y el game feel fueran coherentes.
+            Fui responsable del desarrollo del sistema de físicas soft-body y
+            de la implementación de la mecánica principal de transferencia de
+            masa, colaborando en el diseño de la experiencia cooperativa del juego.
           </p>
         </div>
       </div>
@@ -128,9 +130,12 @@
             <div class="video-player__bottom">
               <div class="video-player__left">
                 <button class="video-player__btn" id="playPauseBtn" aria-label="Play / Pause">
-                  <svg class="icon-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.14v14l11-7-11-7z" /></svg>
+                  <svg class="icon-play" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M8 5.14v14l11-7-11-7z" />
+                  </svg>
                   <svg class="icon-pause" viewBox="0 0 24 24" fill="currentColor" style="display:none">
-                    <rect x="6" y="4" width="4" height="16" /><rect x="14" y="4" width="4" height="16" />
+                    <rect x="6" y="4" width="4" height="16" />
+                    <rect x="14" y="4" width="4" height="16" />
                   </svg>
                 </button>
                 <span class="video-player__time" id="timeDisplay">0:00 / 0:00</span>
@@ -139,10 +144,12 @@
                 <div class="video-player__volume-group">
                   <button class="video-player__btn" id="muteBtn" aria-label="Mute">
                     <svg class="icon-vol-on" viewBox="0 0 24 24" fill="currentColor">
-                      <path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02z" />
+                      <path
+                        d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02z" />
                     </svg>
                     <svg class="icon-vol-off" viewBox="0 0 24 24" fill="currentColor" style="display:none">
-                      <path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z" />
+                      <path
+                        d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z" />
                     </svg>
                   </button>
                   <div class="video-player__volume-bar" id="volumeBar">
@@ -175,13 +182,15 @@
             <img src="../../public/projects/tasks/odossea-softbody.gif" alt="Soft body physics demo">
           </div>
           <div class="project-task__text">
-            <h3 class="project-task__title">Sistema Soft Body con Joints</h3>
+            <h3 class="project-task__title">Soft-Body Physics Controller</h3>
             <p class="project-task__description">
-              Un nodo raíz central y cuatro periféricos en las esquinas, conectados con
-              <strong>RelativeJoint2D</strong> al root y entre sí con <strong>DistanceJoint2D</strong>
-              para evitar deformación extrema. Las fuerzas de movimiento y salto parten del root y
-              se distribuyen hacia fuera. Max Force, Correction Scale y distancias fueron ajustados
-              a mano hasta que la deformación se sintió orgánica sin perder responsividad.
+              El jugador está compuesto por cinco rigidbodies unidos mediante
+              RelativeJoint2D y DistanceJoint2D, formando una estructura soft-body
+              capaz de deformarse sin perder estabilidad. El movimiento y el salto
+              se aplican sobre el cuerpo central, dejando que la red de joints
+              distribuya las fuerzas al resto de nodos. Ajusté iterativamente las
+              restricciones y parámetros de los joints para conseguir una deformación
+              que transmita un buen game feel.
             </p>
           </div>
         </div>
@@ -192,13 +201,15 @@
             <img src="../../public/projects/tasks/odossea-mass.gif" alt="Mass transfer mechanic">
           </div>
           <div class="project-task__text">
-            <h3 class="project-task__title">Transferencia de Masa y Escalado Dinámico</h3>
+            <h3 class="project-task__title">Mass Transfer & Dynamic Soft-Body Scaling</h3>
             <p class="project-task__description">
-              Disparar descuenta un nivel de tamaño (<code>growNum--</code>); recibir masa lo suma
-              (<code>growNum++</code>). La escala se interpola en FixedUpdate para que la transición
-              sea creíble. El reto real fue propagar ese cambio a la red de joints en cada frame:
-              <code>dj.distance</code> y <code>rj.linearOffset</code> se recalculan por ratio de escala
-              para que la estructura no se rompa al crecer o encoger.
+              La mecánica permite transferir masa entre jugadores, haciendo que uno crezca mientras el otro se encoge en
+              tiempo real.
+              El principal reto fue mantener estable la estructura soft-body durante estos cambios de escala, ya que el
+              jugador está compuesto por una red de joints que debía adaptarse sin deformarse ni romperse.
+              Para solucionarlo, recalculé las distancias y offsets de los joints en función del ratio de escala,
+              manteniendo la coherencia física mientras la escala se interpolaba suavemente en FixedUpdate, asegurando
+              transiciones estables entre tamaños.
             </p>
           </div>
         </div>
@@ -209,12 +220,13 @@
             <img src="../../public/projects/tasks/odossea-shoot.gif" alt="Shoot and recoil mechanic">
           </div>
           <div class="project-task__text">
-            <h3 class="project-task__title">Disparo con Retroceso Físico</h3>
+            <h3 class="project-task__title">Physics-Based Shooting & Recoil System</h3>
             <p class="project-task__description">
-              El disparo aplica un impulso al proyectil y el opuesto sobre todos los bones del jugador.
-              El retroceso no es cosmético: se puede usar para impulsarse lateralmente o ganar altura.
-              Una coroutine desactiva temporalmente la colisión entre el cubo disparado y el propio
-              jugador para evitar autogolpes en el primer frame.
+              El disparo aplica un impulso al proyectil y una fuerza opuesta a todos los bones del jugador, generando un
+              sistema de retroceso físico que puede utilizarse también como mecánica de movimiento para impulsarse
+              lateralmente o ganar altura.
+              Para evitar colisiones en el primer frame, una coroutine desactiva temporalmente el contacto entre el
+              proyectil y el jugador inmediatamente después del disparo.
             </p>
           </div>
         </div>
@@ -225,18 +237,13 @@
             <img src="../../public/projects/tasks/odossea-env.gif" alt="Environment interactions">
           </div>
           <div class="project-task__text">
-            <h3 class="project-task__title">Entorno Interactivo y NPCs con Física</h3>
+            <h3 class="project-task__title">Dynamic Physics-Based Environment</h3>
             <p class="project-task__description">
-              Los puentes usan el mismo sistema de joints que el personaje pero con parámetros distintos,
-              dando una deformación más lenta y estructural. Dos NPCs con físicas modificadas: uno aplasta
-              y activa respawn, otro amplifica el salto. Las puertas y botones leen el peso real del
-              jugador, así que el tamaño importa para resolver los puzles.
+              El entorno está compuesto por puentes formados por bones conectados mediante HingeJoint2D y BoxCollider2D,
+              lo que permite que el jugador los cruce mientras reaccionan dinámicamente al peso aplicado.
+              Además, un NPC tipo bouncer aplica un impulso vertical al colisionar con el jugador, distribuyendo la
+              fuerza a través de todos los bones del cuerpo para generar una respuesta física coherente.
             </p>
-            <div class="project-task__tech">
-              <span class="project-task__chip">Soft body bridges</span>
-              <span class="project-task__chip">NPC physics</span>
-              <span class="project-task__chip">Weight-based triggers</span>
-            </div>
           </div>
         </div>
 
@@ -246,12 +253,13 @@
             <img src="../../public/projects/tasks/odossea-death.gif" alt="Death disperse animation">
           </div>
           <div class="project-task__text">
-            <h3 class="project-task__title">Muerte, Dispersión y Respawn</h3>
+            <h3 class="project-task__title">Death & Respawn System</h3>
             <p class="project-task__description">
-              <code>DisperseCubes()</code> lanza tantos cubos como niveles de tamaño tenía el jugador,
-              con ángulos y fuerzas aleatorias —la muerte es física, no una animación. El respawn
-              aparece en la última posición registrada del compañero. Una coroutine sincroniza el orden
-              de reactivación de bones y joints para que la red se restaure sin errores.
+              Al morir, <code>DisperseCubes()</code> genera tantos cubos como niveles de tamaño tenía el jugador,
+              aplicando fuerzas y ángulos aleatorios para representar la destrucción de forma física en lugar de usar
+              una animación.
+              El respawn se realiza en la última posición registrada del compañero, y una coroutine gestiona la
+              reactivación secuencial de bones y joints para reconstruir la estructura de forma estable.
             </p>
           </div>
         </div>
@@ -275,14 +283,14 @@
                   </svg>
                 </div>
                 <div class="project-award__meta">
-                  <h3 class="project-award__title">1r Premio Mejor Tecnología</h3>
+                  <h3 class="project-award__title">Premio Mejor Tecnología</h3>
                   <span class="project-award__event">9ª Gran CITM GameJam · Patrocinado por SocialPoint</span>
                 </div>
               </div>
               <p class="project-award__description">
-                El jurado reconoció el sistema de soft body como la propuesta técnica más sólida de la jam.
-                Lo que convenció no fue la complejidad sino el resultado: algo técnicamente difícil
-                —escalar una red de joints en tiempo real— que el jugador percibe como algo natural.
+                El sistema de soft-body fue reconocido como la propuesta técnica más destacada de la jam.
+                El enfoque se centró en mantener estable una red de joints en tiempo real durante cambios de escala,
+                logrando que el resultado se percibiera de forma natural dentro del gameplay.
               </p>
             </div>
             <div class="project-award__photo">
