@@ -35,12 +35,14 @@
         <span class="project-hero__tag">C++</span>
         <span class="project-hero__tag">SDL2</span>
         <span class="project-hero__tag">Box2D</span>
-        <span class="project-hero__tag">Metroidvania</span>
-        <span class="project-hero__tag">Lead Programmer</span>
+        <span class="project-hero__tag">Tiled</span>
+        <span class="project-hero__tag">AI Systems</span>
       </div>
       <div class="project-hero__button-panel">
-        <a href="https://oalonsoo.itch.io/the-apprentice" target="_blank" class="project-btn project-btn--primary">Play Game</a>
-        <a href="https://github.com/oscaralonsoo/TheApprentice" target="_blank" class="project-btn project-btn--secondary">View Github</a>
+        <a href="https://oalonsoo.itch.io/the-apprentice" target="_blank" class="project-btn project-btn--primary">Play
+          Game</a>
+        <a href="https://github.com/oscaralonsoo/TheApprentice" target="_blank"
+          class="project-btn project-btn--secondary">View Github</a>
       </div>
     </div>
     <div class="project-hero__scroll-indicator" id="scrollArrow">
@@ -58,14 +60,12 @@
       <div class="project-section__inner">
         <h2 class="project-section__title">Overview</h2>
         <p class="project-overview__description">
-          The Apprentice es un Metroidvania de exploración y combate donde juegas como un slime nacido de
-          un cristal roto, perdido en un bosque corrompido por magia. A medida que exploras el mundo,
-          derrotar enemigos debilitados te otorga nuevas habilidades de movimiento —saltos, dashes, slides,
-          ganchos, wall-runs— que abren zonas antes inaccesibles. El juego fue desarrollado en <strong>C++
-          y SDL2</strong> con física Box2D y mapas en Tiled, en colaboración entre el grado de Desarrollo
-          de Videojuegos y el grado de Diseño, Animación y Arte Digital de la UPC·CITM. En la presentación
-          final recibimos feedback de <strong>Conrad Roset y otros profesionales de la industria</strong>,
-          y obtuvimos una <strong>nota de 10</strong> en la entrega.
+          The Apprentice es un metroidvania de exploración y combate desarrollado en C++ con SDL2, Box2D y Tiled como
+          proyecto final de segundo curso del grado en Diseño y Desarrollo de Videojuegos, realizado en colaboración con
+          estudiantes del grado de Diseño, Animación y Arte Digital. Encarnas a un pequeño slime que explora un bosque
+          corrompido por la magia, descubriendo los secretos de un mundo en decadencia. El
+          juego se basa en una progresión de habilidades que amplía gradualmente las opciones de exploración y
+          movimiento, permitiendo acceder a nuevas zonas a medida que avanza la aventura.
         </p>
         <div class="project-overview__stats">
           <div class="project-stat">
@@ -93,14 +93,14 @@
       <div class="project-section__inner">
         <h2 class="project-section__title">Mi rol</h2>
         <div class="project-role__content">
-          <div class="project-role__badge">Lead Programmer · Lead Designer · Tech Art</div>
+          <div class="project-role__badge">Lead Programmer</div>
           <p class="project-role__description">
-            Empecé como Lead Programmer coordinando a 3 desarrolladores, pero el proyecto me llevó
-            a asumir más responsabilidad: ante problemas en el departamento de diseño, tomé las
-            riendas del game design y el level design. En arte actué como dirección artística técnica
-            —filtro entre lo que el equipo de arte producía y lo que el motor podía integrar— sin
-            desplazar al lead de arte, sino complementándolo. En paralelo, programé una parte
-            sustancial del juego: sistemas de IA, narrativa, entorno y el boss final.
+            Como Lead Programmer, coordiné el desarrollo técnico del proyecto y la integración entre los equipos de
+            programación, diseño y arte. Además del liderazgo técnico, participé activamente en game design, level
+            design y dirección técnica de arte, facilitando la integración de los recursos artísticos en el motor y
+            colaborando en la toma de decisiones durante todo el desarrollo. A su vez, desarrollé una parte
+            importante de los sistemas de gameplay, incluyendo IA de enemigos, narrativa, interacciones del entorno y el
+            jefe final.
           </p>
         </div>
       </div>
@@ -132,9 +132,12 @@
             <div class="video-player__bottom">
               <div class="video-player__left">
                 <button class="video-player__btn" id="playPauseBtn" aria-label="Play / Pause">
-                  <svg class="icon-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.14v14l11-7-11-7z" /></svg>
+                  <svg class="icon-play" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M8 5.14v14l11-7-11-7z" />
+                  </svg>
                   <svg class="icon-pause" viewBox="0 0 24 24" fill="currentColor" style="display:none">
-                    <rect x="6" y="4" width="4" height="16" /><rect x="14" y="4" width="4" height="16" />
+                    <rect x="6" y="4" width="4" height="16" />
+                    <rect x="14" y="4" width="4" height="16" />
                   </svg>
                 </button>
                 <span class="video-player__time" id="timeDisplay">0:00 / 0:00</span>
@@ -143,10 +146,12 @@
                 <div class="video-player__volume-group">
                   <button class="video-player__btn" id="muteBtn" aria-label="Mute">
                     <svg class="icon-vol-on" viewBox="0 0 24 24" fill="currentColor">
-                      <path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02z" />
+                      <path
+                        d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02z" />
                     </svg>
                     <svg class="icon-vol-off" viewBox="0 0 24 24" fill="currentColor" style="display:none">
-                      <path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z" />
+                      <path
+                        d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z" />
                     </svg>
                   </button>
                   <div class="video-player__volume-bar" id="volumeBar">
@@ -173,7 +178,6 @@
       <div class="project-section__inner">
         <h2 class="project-section__title">Qué programé</h2>
 
-        <!-- TASK 1: NULLWARDEN BOSS -->
         <div class="project-task">
           <div class="project-task__image">
             <img src="../../public/projects/tasks/apprentice-nullwarden.gif" alt="Nullwarden boss fight">
@@ -181,97 +185,59 @@
           <div class="project-task__text">
             <h3 class="project-task__title">Boss: Nullwarden</h3>
             <p class="project-task__description">
-              El boss final del juego, programado íntegramente por mí. Alterna entre seis estados:
-              <strong>Idle → Attack → Charge → Impaled → Roar → Death</strong>. En ataque lanza
-              patrones de lanzas horizontales con un hueco calculado para que el jugador pueda
-              esquivar. Tras el ataque, embiste hacia el jugador acelerando; al chocar con un muro
-              queda "impalado" e inmóvil, lanzando lanzas verticales periódicas. Si el cristal que
-              lo sostiene recibe cuatro impactos y se rompe, entra en Roar —empuja al jugador en
-              función de la distancia— y queda vulnerable a muerte. El collider cambia de tamaño
-              dinámicamente según la animación activa.
+              Desarrollo completo del jefe final del juego mediante una máquina de estados que controla todas sus fases
+              de combate. El boss alterna entre diferentes ataques y comportamientos en función de su estado, combinando
+              patrones de proyectiles, cargas contra el jugador y momentos de vulnerabilidad para estructurar el
+              combate. Además, adapta dinámicamente sus colisiones al cambiar de animación para mantener la precisión de
+              las interacciones durante toda la batalla.
             </p>
           </div>
         </div>
 
-        <!-- TASK 2: ENEMY AI -->
         <div class="project-task project-task--reverse">
           <div class="project-task__image">
-            <img src="../../public/projects/tasks/apprentice-enemies.gif" alt="Enemy AI behaviours">
+            <img src="../../public/projects/tasks/theapprentice-enemies.gif" alt="Enemy AI behaviours">
           </div>
           <div class="project-task__text">
-            <h3 class="project-task__title">IA de Enemigos</h3>
+            <h3 class="project-task__title">Enemy AI Systems</h3>
             <p class="project-task__description">
-              Programé varios enemigos con comportamientos distintos. <strong>Creebler</strong>
-              patrulla usando una NavigationLayer en Tiled: detecta bordes y muros por tile y
-              cambia de dirección sin pathfinding complejo. <strong>Scurver</strong> y
-              <strong>Bloodrusher</strong> usan A* con heurística Squared para detectar al jugador
-              y embestir; si el jugador esquiva, entran en estado de derrape con fricción progresiva
-              hasta detenerse. Bloodrusher añade aceleración exponencial en la carga y solo muere
-              al impactar contra un muro destructible. <strong>Mireborn</strong> se divide hasta
-              tres veces al recibir daño —Alpha → Beta → Gamma— instanciando versiones más pequeñas
-              con masa y escala reducidas.
+              Desarrollo de múltiples comportamientos de IA mediante máquinas de estados adaptadas a cada enemigo. Se
+              implementaron sistemas de patrulla basados en navegación por tiles, persecución mediante A* y ataques con
+              cargas dinámicas, además de comportamientos específicos como división en entidades de menor tamaño o
+              reacciones físicas tras impactar contra el entorno.
             </p>
-
           </div>
         </div>
 
-        <!-- TASK 3: DIALOGUE SYSTEM -->
         <div class="project-task">
           <div class="project-task__image">
-            <img src="../../public/projects/tasks/apprentice-dialogue.gif" alt="Dialogue system">
+            <img src="../../public/projects/tasks/theapprentice-dialogue.gif" alt="Dialogue system">
           </div>
           <div class="project-task__text">
-            <h3 class="project-task__title">Sistema de Diálogos y NPCs</h3>
+            <h3 class="project-task__title">Dialogue & NPC System</h3>
             <p class="project-task__description">
-              Los diálogos se cargan desde un <code>dialogues.xml</code> con id, speaker y texto.
-              El efecto de escritura muestra caracteres progresivamente según tiempo transcurrido;
-              la primera pulsación de Space lo completa instantáneamente, la segunda avanza al
-              siguiente. El texto se divide en líneas automáticamente según el ancho de la caja
-              con <code>WrapLines()</code>. Los NPCs son sensores Box2D estáticos que activan
-              el diálogo correspondiente al detectar proximidad del jugador, sin colisión física.
+              Sistema de diálogos basado en archivos XML que permite definir conversaciones de forma desacoplada del
+              código. Incluye efecto de escritura progresiva, avance interactivo entre líneas y ajuste automático del
+              texto al espacio disponible. Los NPCs utilizan sensores físicos para detectar la proximidad del jugador e
+              iniciar el diálogo correspondiente sin interferir con la navegación.
             </p>
           </div>
         </div>
 
-        <!-- TASK 4: ENVIRONMENT SYSTEMS -->
         <div class="project-task project-task--reverse">
           <div class="project-task__image">
-            <img src="../../public/projects/tasks/apprentice-env.gif" alt="Environment systems">
+            <img src="../../public/projects/tasks/theapprentice-env.gif" alt="Environment systems">
           </div>
           <div class="project-task__text">
-            <h3 class="project-task__title">Sistemas de Entorno e Interacción</h3>
+            <h3 class="project-task__title">Environment Interaction Systems</h3>
             <p class="project-task__description">
-              Implementé un sistema de <strong>placas de presión y puertas</strong> que sincroniza
-              grupos por ID: placas visibles abren la puerta solo si todas están activas; placas
-              invisibles usan lógica toggle. Las <strong>cajas empujables</strong> alternan entre
-              cuerpo dinámico y cinemático según si el jugador las empuja, con densidad y gravedad
-              ajustadas para simular peso real. Las <strong>Hidden Zones</strong> se desvanecen con
-              un degradado de borde al detectar al jugador, revelando zonas secretas. El
-              <strong>ParticleManager</strong> genera polvo, luciérnagas, lluvia y nieve según el
-              mapa activo, con spawn adaptado al área visible de cámara y control de frecuencia
-              para no saturar.
+              Desarrollo de distintos sistemas de interacción para el entorno, incluyendo placas de presión y puertas
+              sincronizadas, cajas físicas empujables y zonas ocultas que se revelan al detectar la proximidad del
+              jugador. Además, se implementó un gestor de partículas que adapta dinámicamente efectos ambientales como
+              lluvia, nieve o luciérnagas en función del mapa activo y del área visible de la cámara.
             </p>
           </div>
         </div>
-
-        <!-- TASK 5: LEVEL DESIGN -->
-        <div class="project-task">
-          <div class="project-task__image">
-            <img src="../../public/projects/tasks/apprentice-levels.png" alt="Level design maps">
-          </div>
-          <div class="project-task__text">
-            <h3 class="project-task__title">Level Design y Postproducción</h3>
-            <p class="project-task__description">
-              Diseñé varios mapas del juego estructurando cada zona con un objetivo claro: parkour
-              de gancho con recompensa en LifePlantMax, bifurcaciones opcionales para contenido
-              narrativo, introducción de enemigos nuevos y obtención de habilidades. En postproducción
-              rediseñé zonas existentes para hacerlas más orgánicas —colocación de tiles de terreno,
-              reubicación de enemigos y colisiones, pulido de imperfecciones— hasta que el juego
-              transmitiera el nivel de acabado que el proyecto merecía.
-            </p>
-          </div>
-        </div>
-
       </div>
     </section>
 
@@ -291,19 +257,18 @@
                   </svg>
                 </div>
                 <div class="project-award__meta">
-                  <h3 class="project-award__title">Nota Final 10 · Feedback de Industria</h3>
-                  <span class="project-award__event">Conrad Roset · Pangolin Studios · UPC·CITM</span>
+                  <h3 class="project-award__title">Final Project Evaluation</h3>
+                  <span class="project-award__event">Centre de la Imatge i la Tecnología Multimèdia (CITM)</span>
                 </div>
               </div>
               <p class="project-award__description">
-                En la presentación final, Conrad Roset y otros profesionales de la industria probaron
-                el juego y dieron feedback positivo sobre el resultado. Nota máxima en la entrega.
-                Un Metroidvania completo con boss, IA variada, narrativa y mundo handcrafted,
-                hecho en C++ y SDL2 desde cero en 5 meses por un equipo de dos grados.
+                El proyecto recibió la máxima calificación académica (10/10). En la presentación final,
+                profesionales de Nomada Studio y Gameloft Barcelona evaluaron el resultado y destacaron
+                la calidad técnica y el nivel de pulido del proyecto.
               </p>
             </div>
             <div class="project-award__photo">
-              <img src="../../public/projects/awards/the-apprentice.png" alt="Foto presentación The Apprentice">
+              <img src="../../public/projects/awards/theapprentice.jpg" alt="Foto presentación The Apprentice">
             </div>
           </article>
         </div>
@@ -334,7 +299,6 @@
       </div>
     </div>
   </section>
-
 </body>
 
 <script src="src/js/scrollArrow.js"></script>

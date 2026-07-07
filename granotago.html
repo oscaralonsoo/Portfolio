@@ -32,15 +32,16 @@
         <h1 class="project-hero__title">GranotaGo</h1>
       </div>
       <div class="project-hero__meta">
-        <span class="project-hero__tag">Unity</span>
+        <span class="project-hero__tag">Unity 2D</span>
         <span class="project-hero__tag">C#</span>
         <span class="project-hero__tag">WebGL</span>
-        <span class="project-hero__tag">Educational</span>
-        <span class="project-hero__tag">Drag & Drop UI</span>
+        <span class="project-hero__tag">UI Systems</span>
       </div>
       <div class="project-hero__button-panel">
-        <a href="https://oalonsoo.itch.io/granotago" target="_blank" class="project-btn project-btn--primary">Play Game</a>
-        <a href="https://github.com/oscaralonsoo/GranotaGo" target="_blank" class="project-btn project-btn--secondary">View Github</a>
+        <a href="https://oalonsoo.itch.io/granotago" target="_blank" class="project-btn project-btn--primary">Play
+          Game</a>
+        <a href="https://github.com/oscaralonsoo/GranotaGo" target="_blank"
+          class="project-btn project-btn--secondary">View Github</a>
       </div>
     </div>
     <div class="project-hero__scroll-indicator" id="scrollArrow">
@@ -58,14 +59,11 @@
       <div class="project-section__inner">
         <h2 class="project-section__title">Overview</h2>
         <p class="project-overview__description">
-          GranotaGo fue desarrollado para la <strong>3ª edición de los Premis Ludi</strong>, impulsados por
-          3Cat y GameBCN: un certamen universitario que propone diseñar un videojuego con finalidad educativa
-          y curricular para niños de 6 a 8 años. El juego controlas una rana aventurera que salta entre
-          plataformas, pero el movimiento no se controla directamente: el jugador <strong>arrastra bloques
-          de lógica computacional</strong> a un panel de ejecución para programar las acciones de la rana.
-          La mecánica trabaja pensamiento computacional de forma natural, sin que se sienta como un ejercicio
-          académico. Disponible en navegador —PC, móvil y tablet— y diseñado con una UI completamente
-          responsiva para que funcione en cualquier dispositivo del aula.
+          GranotaGo es un juego educativo desarrollado en Unity para navegador en el que el jugador programa los
+          movimientos de una rana mediante bloques de lógica computacional arrastrables. Creado para la 3ª edición de
+          los Premis Ludi, impulsados por 3Cat y GameBCN, el proyecto busca introducir el pensamiento computacional a
+          niños de 6 a 8 años a través de puzles interactivos. El juego fue diseñado con una interfaz completamente
+          responsiva para ofrecer la misma experiencia en PC, móvil y tablet.
         </p>
         <div class="project-overview__stats">
           <div class="project-stat">
@@ -93,13 +91,11 @@
       <div class="project-section__inner">
         <h2 class="project-section__title">Mi rol</h2>
         <div class="project-role__content">
-          <div class="project-role__badge">Gameplay Programmer · Diseño de la idea</div>
+          <div class="project-role__badge">Gameplay & UI Programmer</div>
           <p class="project-role__description">
-            Propuse la idea del juego y fui el único programador. Me encargué de diseñar e implementar
-            el sistema de bloques arrastrables, el panel de ejecución, el selector de niveles con
-            progresión y estrellas, y toda la lógica de gameplay. El reto principal fue que una UI
-            compleja de drag-and-drop funcionara bien en web, en pantallas táctiles y con ratón,
-            sin que el niño se bloqueara en ningún momento.
+            Responsable del diseño e implementación de los principales sistemas de gameplay y UI, incluyendo el editor
+            de bloques mediante drag-and-drop, el panel de ejecución, el sistema de progresión y la interfaz adaptada
+            para WebGL para distintos dispositivos.
           </p>
         </div>
       </div>
@@ -131,9 +127,12 @@
             <div class="video-player__bottom">
               <div class="video-player__left">
                 <button class="video-player__btn" id="playPauseBtn" aria-label="Play / Pause">
-                  <svg class="icon-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.14v14l11-7-11-7z" /></svg>
+                  <svg class="icon-play" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M8 5.14v14l11-7-11-7z" />
+                  </svg>
                   <svg class="icon-pause" viewBox="0 0 24 24" fill="currentColor" style="display:none">
-                    <rect x="6" y="4" width="4" height="16" /><rect x="14" y="4" width="4" height="16" />
+                    <rect x="6" y="4" width="4" height="16" />
+                    <rect x="14" y="4" width="4" height="16" />
                   </svg>
                 </button>
                 <span class="video-player__time" id="timeDisplay">0:00 / 0:00</span>
@@ -142,10 +141,12 @@
                 <div class="video-player__volume-group">
                   <button class="video-player__btn" id="muteBtn" aria-label="Mute">
                     <svg class="icon-vol-on" viewBox="0 0 24 24" fill="currentColor">
-                      <path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02z" />
+                      <path
+                        d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02z" />
                     </svg>
                     <svg class="icon-vol-off" viewBox="0 0 24 24" fill="currentColor" style="display:none">
-                      <path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z" />
+                      <path
+                        d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z" />
                     </svg>
                   </button>
                   <div class="video-player__volume-bar" id="volumeBar">
@@ -175,55 +176,64 @@
         <!-- TASK 1 -->
         <div class="project-task">
           <div class="project-task__image">
+            <img src="../../public/projects/tasks/granotago.gif" alt="Drag and drop block system">
+          </div>
+          <div class="project-task__text">
+            <h3 class="project-task__title">Block Execution System</h3>
+            <p class="project-task__description">
+              Sistema encargado de interpretar la secuencia creada en el panel de ejecución, procesando los bloques en
+              orden y convirtiendo cada uno en una acción de la rana. La ejecución espera a que cada movimiento finalice
+              antes de continuar con el siguiente. Si la secuencia no resuelve el nivel, la rana vuelve automáticamente
+              a la posición inicial para permitir un nuevo intento.
+            </p>
+          </div>
+        </div>
+
+        <div class="project-task project-task--reverse">
+          <div class="project-task__image">
             <img src="../../public/projects/tasks/granotago-drag.gif" alt="Drag and drop block system">
           </div>
           <div class="project-task__text">
             <h3 class="project-task__title">Sistema de Bloques Arrastrables</h3>
             <p class="project-task__description">
-              El núcleo del juego es un sistema de drag-and-drop donde el jugador arrastra bloques
-              de lógica desde una librería a un panel de ejecución. Durante el arrastre, el bloque
-              se mueve en un <strong>DragOverlay</strong> independiente para evitar conflictos de
-              canvas, y el panel muestra en tiempo real un preview de dónde se insertará el bloque 
-              calculando el índice por posición X local. Al soltar, el bloque se inserta 
-              en la posición correcta o vuelve a su slot con una animación suavizada de 
-              retorno. El sistema distingue bloques normales de bloques Loop,
-              que tienen su propio panel anidado con tamaño dinámico.
+              Sistema de drag-and-drop para construir secuencias de lógica mediante bloques. Durante el arrastre, los
+              elementos se muestran en un <strong>DragOverlay</strong> independiente. El panel de ejecución calcula en
+              tiempo real la posición de inserción y muestra una previsualización antes de soltar el bloque. Al
+              liberarlo, se inserta en la posición correcta o vuelve a su origen con una animación suave. El sistema
+              soporta bloques tipo Loop con contenedores anidados y tamaño dinámico.
             </p>
           </div>
         </div>
 
         <!-- TASK 2 -->
-        <div class="project-task project-task--reverse">
+        <div class="project-task">
           <div class="project-task__image">
             <img src="../../public/projects/tasks/granotago-execution.gif" alt="Execution panel layout">
           </div>
           <div class="project-task__text">
             <h3 class="project-task__title">Panel de Ejecución Responsivo</h3>
             <p class="project-task__description">
-              El panel de ejecución recalcula el tamaño del layout: centra los bloques si caben
-              en el viewport, o activa scroll horizontal si no caben. El ancho total se propaga
-              desde los bloques Loop hacia arriba <code>GetContentWidth()</code> suma el contenido
-              anidado para que el ScrollRect siempre tenga el tamaño correcto. Al reordenar un
-              bloque, el resto se desplazan animados con velocidad doble. Funciona igual con ratón, touch y en pantallas de distintos tamaños.
+              El panel de ejecución ajusta su layout en función del contenido. Si los bloques caben en pantalla, se
+              centran automáticamente; en caso contrario, se habilita scroll horizontal.
+              El tamaño total del contenido se recalcula dinámicamente incluyendo bloques anidados como los loops.
+              Al reordenar bloques, el resto se desplazan con animación suave. El sistema es compatible con ratón, touch
+              y diferentes resoluciones.
             </p>
           </div>
         </div>
 
         <!-- TASK 3 -->
-        <div class="project-task">
+        <div class="project-task project-task--reverse">
           <div class="project-task__image">
             <img src="../../public/projects/tasks/granotago-levels.gif" alt="Level selector and stars">
           </div>
           <div class="project-task__text">
             <h3 class="project-task__title">Selector de Niveles y Progresión</h3>
             <p class="project-task__description">
-              El selector desbloquea niveles secuencialmente y persiste el progreso con
-              <code>PlayerPrefs</code>. Cada nivel tiene un mínimo de bloques para resolverlo:
-              usarlo con ese mínimo da 3 estrellas, con dos más da 2, cualquier otra cantidad da 1.
-              Las estrellas guardadas por nivel se comparan al completar para actualizar solo si
-              se mejora la marca. La animación de estrellas al finalizar usa DOTween con
-              <code>Ease.OutBack</code> y delays escalonados para que la aparición se sienta
-              satisfactoria sin ser intrusiva.
+              Sistema de progresión con desbloqueo secuencial de niveles y guardado de partida mediante
+              <code>PlayerPrefs</code>. Cada nivel evalúa la solución según el número de bloques utilizados, otorgando
+              entre una y tres estrellas. La mejor puntuación se conserva entre partidas y se refleja tanto en el
+              selector de niveles como en la pantalla de finalización.
             </p>
           </div>
         </div>
