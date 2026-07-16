@@ -38,13 +38,15 @@
       <div class="project-hero__meta">
         <span class="project-hero__tag">C++</span>
         <span class="project-hero__tag">OpenGL</span>
-        <span class="project-hero__tag">Custom Engine</span>
-        <span class="project-hero__tag">Action RPG</span>
-        <span class="project-hero__tag">Lead Programmer</span>
+        <span class="project-hero__tag">Lua</span>
+        <span class="project-hero__tag">Wave Engine</span>
+        <span class="project-hero__tag">Git</span>
       </div>
       <div class="project-hero__button-panel">
-        <a href="https://nobody-games-studio.itch.io/son-of-ithaca" target="_blank" class="project-btn project-btn--primary">Play Game</a>
-        <a href="https://github.com/NobodyGamesStudio/WaveEngine" target="_blank" class="project-btn project-btn--secondary">View Github</a>
+        <a href="https://nobody-games-studio.itch.io/son-of-ithaca" target="_blank"
+          class="project-btn project-btn--primary">Play Game</a>
+        <a href="https://github.com/NobodyGamesStudio/WaveEngine" target="_blank"
+          class="project-btn project-btn--secondary">View Github</a>
       </div>
     </div>
     <div class="project-hero__scroll-indicator" id="scrollArrow">
@@ -62,12 +64,11 @@
       <div class="project-section__inner">
         <h2 class="project-section__title">Overview</h2>
         <p class="project-overview__description">
-          Son Of Ithaca es un action RPG de exploración y puzzles ambientado en la mitología griega de la Odisea,
-          desarrollado íntegramente sobre <strong>WaveEngine, un motor custom en C++ y OpenGL</strong> construido
-          por el propio equipo. El jugador va encontrando máscaras a lo largo del mundo, cada una con una habilidad
-          de combate activa y una pasiva que altera la interacción con el entorno, permitiendo acceder a nuevas zonas
-          y resolver puzzles de formas distintas. El proyecto fue desarrollado por 33 estudiantes
-          organizados en departamentos de código, arte y diseño, con metodología Scrum.
+          Son Of Ithaca es un action RPG de exploración y puzles inspirado en la mitología griega, desarrollado
+          íntegramente sobre Wave Engine, un motor propio construido en C++ y OpenGL. A
+          lo largo del proyecto se ampliaron tanto el juego como el propio motor, incorporando sistemas como scripting
+          en Lua, audio, partículas, materiales, shaders, físicas y animaciones. El jugador progresa obteniendo máscaras
+          con habilidades activas y pasivas que modifican el combate, la exploración y la resolución de puzles.
         </p>
         <div class="project-overview__stats">
           <div class="project-stat">
@@ -95,14 +96,15 @@
       <div class="project-section__inner">
         <h2 class="project-section__title">Mi rol</h2>
         <div class="project-role__content">
-          <div class="project-role__badge">Lead Programmer · 12 miembros</div>
+          <div class="project-role__badge">Lead Programmer</div>
+
           <p class="project-role__description">
-            Lideré el departamento de programación durante los 5 meses de desarrollo. 
-            Mi trabajo fue tanto técnico como organizativo: estructuré el equipo en 
-            subgrupos especializados, diseñé el flujo de trabajo y me aseguré de que 
-            cada entrega saliera a tiempo y en condiciones. Me encargué  
-            de resolver cualquier problema crítico que afectara al game loop o a las 
-            entregas, y fui el puente entre código y el resto de departamentos.
+            Responsable de la coordinación técnica del departamento de programación durante todo el
+            desarrollo. Definición de la arquitectura del proyecto, planificación de tareas y prioridades,
+            organización del trabajo mediante Scrum y Git, seguimiento del progreso entre equipos y resolución
+            de incidencias críticas. Además del liderazgo técnico, participación en la evolución de Wave Engine,
+            soporte al equipo mediante revisiones de código, pair programming, scripting en Lua y desarrollo de
+            documentación interna para facilitar el flujo de trabajo.
           </p>
         </div>
       </div>
@@ -134,9 +136,12 @@
             <div class="video-player__bottom">
               <div class="video-player__left">
                 <button class="video-player__btn" id="playPauseBtn" aria-label="Play / Pause">
-                  <svg class="icon-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.14v14l11-7-11-7z" /></svg>
+                  <svg class="icon-play" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M8 5.14v14l11-7-11-7z" />
+                  </svg>
                   <svg class="icon-pause" viewBox="0 0 24 24" fill="currentColor" style="display:none">
-                    <rect x="6" y="4" width="4" height="16" /><rect x="14" y="4" width="4" height="16" />
+                    <rect x="6" y="4" width="4" height="16" />
+                    <rect x="14" y="4" width="4" height="16" />
                   </svg>
                 </button>
                 <span class="video-player__time" id="timeDisplay">0:00 / 0:00</span>
@@ -145,10 +150,12 @@
                 <div class="video-player__volume-group">
                   <button class="video-player__btn" id="muteBtn" aria-label="Mute">
                     <svg class="icon-vol-on" viewBox="0 0 24 24" fill="currentColor">
-                      <path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02z" />
+                      <path
+                        d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02z" />
                     </svg>
                     <svg class="icon-vol-off" viewBox="0 0 24 24" fill="currentColor" style="display:none">
-                      <path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z" />
+                      <path
+                        d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z" />
                     </svg>
                   </button>
                   <div class="video-player__volume-bar" id="volumeBar">
@@ -178,16 +185,17 @@
         <!-- TASK 1 -->
         <div class="project-task">
           <div class="project-task__image">
-            <img src="../../public/projects/tasks/son-of-ithaca-lead.png" alt="Team organization">
+            <img src="../../public/projects/tasks/son-of-ithaca-lead.gif" alt="Team organization">
           </div>
           <div class="project-task__text">
-            <h3 class="project-task__title">Liderazgo Técnico de 12 Programadores</h3>
+            <h3 class="project-task__title">Arquitectura y Liderazgo Técnico</h3>
             <p class="project-task__description">
-              Subgrupos de Player, Enemigos/IA, UI, Technical Artist, Technical Audio y Motor,
-              cada uno con su backlog propio. El Kanban en Notion tenía dependencias explícitas y
-              notificaciones automáticas de relevo para evitar bloqueos entre equipos. 7 sprints
-              de 2-3 semanas con retrospectiva. El repositorio GitHub —branching, versiones,
-              releases— lo gestionaba yo.
+              Coordinación del departamento de programación formado por 12 desarrolladores, organizando el trabajo
+              en equipos especializados para minimizar dependencias y conflictos de integración. Definición de la
+              arquitectura del proyecto, planificación de sprints, asignación de prioridades y seguimiento de
+              milestones mediante Notion automatizado. Supervisión del repositorio Git, revisiones de código,
+              sesiones de pair programming y redistribución de tareas cuando fue necesario para mantener el ritmo
+              de desarrollo.
             </p>
           </div>
         </div>
@@ -195,16 +203,17 @@
         <!-- TASK 2 -->
         <div class="project-task project-task--reverse">
           <div class="project-task__image">
-            <img src="../../public/projects/tasks/son-of-ithaca-engine.png" alt="Custom engine C++ OpenGL">
+            <img src="../../public/projects/tasks/son-of-ithaca-engine.gif" alt="Custom engine C++ OpenGL">
           </div>
           <div class="project-task__text">
-            <h3 class="project-task__title">Motor Custom en C++ y OpenGL</h3>
+            <h3 class="project-task__title">Desarrollo y Soporte de Wave Engine</h3>
             <p class="project-task__description">
-              Sin Unity, sin Unreal. El equipo construyó desde cero el rendering pipeline en OpenGL,
-              el sistema de escenas, las físicas y el scripting en Lua. Eso obliga a entender
-              gestión de memoria, ciclo de vida de objetos y pipeline de render de verdad.
-              Escribí la guía de iniciación a Lua y el workflow de GitHub adaptado al motor
-              para que el equipo arrancara sin fricción y sin conflictos en assets binarios.
+              Participación en la evolución de Wave Engine, un motor desarrollado íntegramente en C++ y OpenGL,
+              incorporando nuevos módulos y mejoras para el propio flujo de desarrollo. Soporte técnico durante la
+              integración de sistemas como scripting en Lua, audio, materiales, shaders, partículas y animaciones,
+              además de depuración de incidencias complejas y resolución de hotfixes. Elaboración de la
+              documentación del workflow de Git y de la guía de scripting en Lua para facilitar la incorporación
+              del equipo al motor.
             </p>
           </div>
         </div>
@@ -212,15 +221,15 @@
         <!-- TASK 3 -->
         <div class="project-task">
           <div class="project-task__image">
-            <img src="../../public/projects/tasks/son-of-ithaca-hotfix.png" alt="Hotfix and build releases">
+            <img src="../../public/projects/tasks/son-of-ithaca-hotfix.gif" alt="Hotfix and build releases">
           </div>
           <div class="project-task__text">
-            <h3 class="project-task__title">Build Releases y Hotfixes Críticos</h3>
+            <h3 class="project-task__title">Integración, Builds y Estabilidad</h3>
             <p class="project-task__description">
-              Cada build la preparaba, validaba y distribuía yo. Los hotfixes críticos también:
-              los fallos en producción rara vez aparecen donde se espera, así que este rol
-              exigía visión transversal de todos los sistemas. Además diseñé el nivel 1,
-              el onboarding donde el jugador aprende las mecánicas de máscaras.
+              Gestión de las builds internas y de las versiones entregadas al equipo, verificando la estabilidad
+              del proyecto antes de cada milestone. Diagnóstico y resolución de errores críticos, incluyendo
+              crashes, memory leaks y softlocks, coordinando la integración de cambios entre departamentos y
+              asegurando que las entregas mantuvieran un estado jugable y estable.
             </p>
           </div>
         </div>
@@ -228,16 +237,16 @@
         <!-- TASK 4 -->
         <div class="project-task project-task--reverse">
           <div class="project-task__image">
-            <img src="../../public/projects/tasks/son-of-ithaca-bridge.png" alt="Cross-department communication">
+            <img src="../../public/projects/tasks/son-of-ithaca-pipeline.gif" alt="Cross-department communication">
           </div>
           <div class="project-task__text">
-            <h3 class="project-task__title">Puente Técnico entre Departamentos</h3>
+            <h3 class="project-task__title">Pipeline Técnico Multidisciplinar</h3>
             <p class="project-task__description">
-              Con 33 personas la fricción entre departamentos es inevitable. Enseñé al equipo de
-              arte a instalar y usar el motor, traduje limitaciones técnicas a decisiones de diseño
-              asumibles, y resolví conflictos tanto de comunicación como técnicos. Discord con
-              canales por área para que el traspaso de información fuera trazable y no se perdiera
-              en conversaciones informales.
+              Definición y mantenimiento del pipeline de integración entre programación, arte y diseño.
+              Elaboración de documentación y soporte técnico para la exportación de modelos, animaciones,
+              materiales y texturas al motor, estableciendo criterios de optimización, pivotes, interpolaciones y
+              configuración de assets. Asistencia al equipo en scripting con Lua y resolución de incidencias
+              derivadas de la integración de contenido.
             </p>
           </div>
         </div>
@@ -261,18 +270,20 @@
                   </svg>
                 </div>
                 <div class="project-award__meta">
-                  <h3 class="project-award__title">Nota Final 10 · Presentación con Industria</h3>
-                  <span class="project-award__event">King · Alkimia Interactive · Drop of Pixel</span>
+                  <h3 class="project-award__title">Presentación Final y Evaluación</h3>
+                  <span class="project-award__event">
+                   Centre de la Imatge i la Tecnología Multimèdia (CITM)
+                  </span>
                 </div>
               </div>
               <p class="project-award__description">
-                Profesionales de King, Alkimia Interactive y Drop of Pixel probaron el juego en la
-                presentación final y el feedback fue muy positivo. Nota máxima en la entrega.
-                Motor custom en C++ desde cero, 33 personas, 5 meses —ese es el contexto del resultado.
+                El proyecto fue presentado ante profesionales de King, Alkimia Interactive y Drop of Pixel,
+                recibiendo una valoración muy positiva tanto del resultado final como del desarrollo sobre un motor
+                propio. La entrega obtuvo la máxima calificación académica (10/10).
               </p>
             </div>
             <div class="project-award__photo">
-              <img src="../../public/projects/awards/son-of-ithaca.png" alt="Foto presentación Son Of Ithaca">
+              <img src="../../public/projects/awards/son-of-ithaca.jpg" alt="Foto presentación Son Of Ithaca">
             </div>
           </article>
         </div>

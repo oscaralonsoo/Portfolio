@@ -623,7 +623,6 @@ header::after {
 }
 
 .projects__grid article:hover {
-    transform: translateY(-4px);
     border-color: rgba(var(--accent-rgb), 0.5);
     box-shadow: 0 20px 40px var(--shadow-stronger), 0 0 30px rgba(var(--accent-rgb), 0.12);
 }
@@ -949,41 +948,6 @@ footer {
     transform: translateY(20px);
     transition: none;
 }
-.summary article:nth-child(2),
-.skills__item:nth-child(2),
-.projects__grid article:nth-child(2),
-.experience__item:nth-child(2) {
-    transition-delay: 0.08s;
-}
-
-.summary article:nth-child(3),
-.skills__item:nth-child(3),
-.projects__grid article:nth-child(3),
-.experience__item:nth-child(3) {
-    transition-delay: 0.16s;
-}
-
-.summary article:nth-child(4),
-.skills__item:nth-child(4),
-.projects__grid article:nth-child(4),
-.experience__item:nth-child(4) {
-    transition-delay: 0.24s;
-}
-
-.summary article:nth-child(5),
-.skills__item:nth-child(5),
-.projects__grid article:nth-child(5),
-.experience__item:nth-child(5) {
-    transition-delay: 0.32s;
-}
-
-.summary article:nth-child(6),
-.skills__item:nth-child(6),
-.projects__grid article:nth-child(6),
-.experience__item:nth-child(6) {
-    transition-delay: 0.4s;
-}
-
 
 @media (max-width: 1024px) {
     :root {
