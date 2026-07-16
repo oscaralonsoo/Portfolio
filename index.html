@@ -4,6 +4,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    (function () {
+      try {
+        var theme = localStorage.getItem('portfolio-theme');
+        if (theme === 'light') {
+          document.documentElement.classList.add('light-mode');
+        }
+      } catch (e) { }
+    })();
+  </script>
   <link href="src/css/styles.css" rel="stylesheet">
   <script>
     window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
@@ -18,38 +28,57 @@
       <ul class="nav__index">
         <li><a href="#home" class="nav__home">Home</a></li>
         <li><a href="#experience" class="nav__experience">Experience</a></li>
+        <li><a href="#skills" class="nav__skills">Skills</a></li>
         <li><a href="#projects" class="nav__projects">Projects</a></li>
       </ul>
       <ul class="nav__social-media">
-        <li><a href="https://github.com/oscaralonsoo"><img src="../../public/github.svg" alt="GitHub"></a></li>
-        <li><a href="https://www.linkedin.com/in/oalonsoo"><img src="../../public/linkedin.svg" alt="LinkedIn"></a></li>
+        <li><a href="https://github.com/oscaralonsoo" target="_blank"><img src="../../public/github.svg"
+              alt="GitHub"></a></li>
+        <li><a href="https://www.linkedin.com/in/oalonsoo" target="_blank"><img src="../../public/linkedin.svg"
+              alt="LinkedIn"></a></li>
+        <li>
+          <button type="button" class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+            <svg class="theme-toggle__icon theme-toggle__icon--sun" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <circle cx="12" cy="12" r="4"></circle>
+              <path d="M3 12h1M12 3v1M20 12h1M12 20v1M5.6 5.6l.7 .7M18.4 5.6l-.7 .7M17.7 17.7l.7 .7M6.3 17.7l-.7 .7">
+              </path>
+            </svg>
+            <svg class="theme-toggle__icon theme-toggle__icon--moon" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z"></path>
+            </svg>
+          </button>
+        </li>
       </ul>
     </div>
   </nav>
 
   <header id="home">
-  <div class="hero__inner">
-    <div class="hero__content">
-      <h2 class="hero__greeting">Hi, I'm</h2>
-      <h1 class="hero__name">Oscar Alonso</h1>
-      <p class="hero__position">Gameplay Developer / QA Tester</p>
-      <div class="hero__button-panel">
-        <a href="" class="hero__resume-button">
-          <span>Download CV</span>
-        </a>
-        <a href="#projects" class="hero__projects-button">
-          <span>Projects</span>
-        </a>
+    <div class="hero__inner">
+      <div class="hero__content">
+        <h2 class="hero__greeting">Hi, I'm</h2>
+        <h1 class="hero__name">Oscar Alonso</h1>
+        <p class="hero__position">Gameplay Programmer & QA Tester</p>
+        <div class="hero__button-panel">
+          <a href="../../public/OscarAlonsoCV.pdf" download="Oscar-Alonso-CV.pdf" class="hero__resume-button">
+            <span>Download CV</span>
+          </a>
+          <a href="#projects" class="hero__projects-button">
+            <span>Projects</span>
+          </a>
+        </div>
       </div>
+      <img src="../../public/pfp.png" alt="Oscar Alonso" class="hero__pfp">
     </div>
-    <img src="../../public/pfp.png" alt="Oscar Alonso" class="hero__pfp">
-  </div>
-</header>
+  </header>
 
   <main>
     <section class="summary">
       <article>
-        <svg width="60" height="60" viewBox="0 0 24 24" stroke-width="1" stroke="#9e57f0" fill="none"
+        <svg width="60" height="60" viewBox="0 0 24 24" stroke-width="1" stroke="var(--accent)" fill="none"
           stroke-linecap="round" stroke-linejoin="round">
           <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
           <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4"></path>
@@ -65,7 +94,7 @@
         </div>
       </article>
       <article>
-        <svg width="60" height="60" viewBox="0 0 24 24" stroke-width="1" stroke="#9e57f0" fill="none"
+        <svg width="60" height="60" viewBox="0 0 24 24" stroke-width="1" stroke="var(--accent)" fill="none"
           stroke-linecap="round" stroke-linejoin="round">
           <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
           <path d="M4 4m0 1a1 1 0 0 1 1 -1h14a1 1 0 0 1 1 1v14a1 1 0 0 1 -1 1h-14a1 1 0 0 1 -1 -1z"></path>
@@ -78,7 +107,7 @@
         </div>
       </article>
       <article>
-        <svg width="60" height="60" viewBox="0 0 24 24" stroke-width="1" stroke="#9e57f0" fill="none"
+        <svg width="60" height="60" viewBox="0 0 24 24" stroke-width="1" stroke="var(--accent)" fill="none"
           stroke-linecap="round" stroke-linejoin="round">
           <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
           <path d="M14 3v4a1 1 0 0 0 1 1h4"></path>
@@ -92,45 +121,201 @@
         </div>
       </article>
     </section>
-    <section class="experience" id="experience"></section>
+    <section class="experience" id="experience">
+      <h2 class="experience__title">Experience</h2>
+
+      <div class="experience__timeline">
+        <div class="experience__item">
+          <div class="experience__dot"></div>
+          <div class="experience__content">
+            <span class="experience__date">2023 — 2024</span>
+            <h3 class="experience__role">Game Developer</h3>
+            <p class="experience__company">MGA Games</p>
+            <p class="experience__description">
+              Desarrollo completo de juegos Slot en colaboración con los equipos de arte y diseño, incluyendo la
+              implementación de funcionalidades, el mantenimiento del código y la resolución de incidencias reportadas
+              por el equipo de QA.
+            </p>
+            <div class="experience__tags">
+              <span>JavaScript</span>
+              <span>Phaser</span>
+              <span>Subversion</span>
+              <span>Jira</span>
+              <span>Chrome DevTools</span>
+            </div>
+            <div class="experience__links">
+              <a href="https://mga.games/" target="_blank" rel="noopener" class="experience__link">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path d="M3 21l18 0"></path>
+                  <path d="M9 8l1 0"></path>
+                  <path d="M9 12l1 0"></path>
+                  <path d="M9 16l1 0"></path>
+                  <path d="M14 8l1 0"></path>
+                  <path d="M14 12l1 0"></path>
+                  <path d="M14 16l1 0"></path>
+                  <path d="M5 21v-16a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v16"></path>
+                </svg>
+                <span>MGA Games</span>
+              </a>
+              <a href="https://mga.games/games/lucky-western" target="_blank" rel="noopener" class="experience__link">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6"></path>
+                  <path d="M11 13l9 -9"></path>
+                  <path d="M15 4h5v5"></path>
+                </svg>
+                <span>Ver juego</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="experience__item">
+          <div class="experience__dot"></div>
+          <div class="experience__content">
+            <span class="experience__date">Jun 2022 - Oct 2022</span>
+            <h3 class="experience__role">Game Developer Intern</h3>
+            <p class="experience__company">MGA Games</p>
+            <p class="experience__description">
+              Desarrollo de herramientas internas para optimizar flujos de trabajo y reducir tareas manuales, además de
+              la gestión e integración del sistema de internacionalización de juegos Slot, coordinando la incorporación
+              de traducciones para los distintos mercados.
+            </p>
+            <div class="experience__tags">
+              <span>Python</span>
+              <span>JSON</span>
+              <span>Git</span>
+            </div>
+            <div class="experience__links">
+              <a href="https://mga.games/" target="_blank" rel="noopener" class="experience__link">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path d="M3 21l18 0"></path>
+                  <path d="M9 8l1 0"></path>
+                  <path d="M9 12l1 0"></path>
+                  <path d="M9 16l1 0"></path>
+                  <path d="M14 8l1 0"></path>
+                  <path d="M14 12l1 0"></path>
+                  <path d="M14 16l1 0"></path>
+                  <path d="M5 21v-16a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v16"></path>
+                </svg>
+                <span>MGA Games</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <section class="skills" id="skills">
       <h2 class="skills__title">Skills</h2>
-      <div class="skills__container">
-      </div>
+      <div class="skills__container"></div>
+      <div class="skills__container skills__container--reverse"></div>
     </section>
     <section class="projects" id="projects">
       <h2 class="projects__title">Projects</h2>
       <div class="projects__grid">
         <article>
-          <!-- <a href="son-of-ithaca.html"> -->
           <a href="https://nobody-games-studio.itch.io/son-of-ithaca" target="_blank">
             <img src="../../public/projects/home/sonofithaca.jpg" alt="Son Of Ithaca">
+            <div class="projects__overlay">
+              <h3 class="projects__name">Son Of Ithaca</h3>
+              <p class="projects__description">
+                Action RPG de exploración y puzles. Liderazgo técnico y desarrollo de herramientas, sistemas y flujo de
+                trabajo.
+              </p>
+              <div class="projects__tags">
+                <span>Unity</span>
+                <span>C#</span>
+              </div>
+            </div>
           </a>
         </article>
+
         <article>
           <a href="odossea.html">
             <img src="../../public/projects/home/odossea.png" alt="Odossea">
+            <div class="projects__overlay">
+              <h3 class="projects__name">Odossea</h3>
+              <p class="projects__description">
+                Cooperativo de puzles y plataformas. Desarrollo de un sistema de físicas soft-body y mecánicas
+                basadas en físicas.
+              </p>
+              <div class="projects__tags">
+                <span>Unity</span>
+                <span>C#</span>
+              </div>
+            </div>
           </a>
         </article>
+
         <article>
           <a href="the-apprentice.html">
             <img src="../../public/projects/home/theApprentice.png" alt="TheApprentice">
+            <div class="projects__overlay">
+              <h3 class="projects__name">The Apprentice</h3>
+              <p class="projects__description">
+                Metroidvania de exploración y combate. Desarrollo de sistemas de gameplay, IA de enemigos e
+                interacciones del entorno.
+              </p>
+              <div class="projects__tags">
+                <span>Unity</span>
+                <span>C#</span>
+              </div>
+            </div>
           </a>
         </article>
+
         <article>
           <a href="granotago.html">
             <img src="../../public/projects/home/granotaGo.png" alt="GranotaGo">
+            <div class="projects__overlay">
+              <h3 class="projects__name">GranotaGo</h3>
+              <p class="projects__description">
+                Juego educativo de programación por bloques para niños. Desarrollo de los principales sistemas de
+                gameplay y UI.
+              </p>
+              <div class="projects__tags">
+                <span>Unity</span>
+                <span>C#</span>
+              </div>
+            </div>
           </a>
         </article>
+
         <article>
-          <!-- <a href="macca.html"> -->
           <a href="https://oalonsoo.itch.io/macca" target="_blank">
             <img src="../../public/projects/home/macca.png" alt="Macca">
+            <div class="projects__overlay">
+              <h3 class="projects__name">Macca</h3>
+              <p class="projects__description">
+                Juego de estrategia en primera persona. Desarrollo de sistemas de gameplay, físicas y herramientas
+                visuales.
+              </p>
+              <div class="projects__tags">
+                <span>Unity</span>
+                <span>C#</span>
+              </div>
+            </div>
           </a>
         </article>
+
         <article>
-          <a href="https://github.com/oscaralonsoo/BubbleBobble" target="_blank">
-            <img src="../../public/projects/home/bubbleBobble.png" alt="BubbleBobble">
+          <a href="https://github.com/oscaralonsoo/DuneEngine" target="_blank">
+            <img src="../../public/projects/home/duneEngine.png" alt="Dune Engine">
+            <div class="projects__overlay">
+              <h3 class="projects__name">Dune Engine</h3>
+              <p class="projects__description">
+                Motor de videojuegos en OpenGL. Desarrollo de sistemas de renderizado, carga de recursos, editor y
+                herramientas.
+              </p>
+              <div class="projects__tags">
+                <span>C++</span>
+                <span>SDL</span>
+              </div>
+            </div>
           </a>
         </article>
       </div>
@@ -139,9 +324,9 @@
   </main>
 
   <footer>
-    <p class="footer__credits">© Developer Portfolio by <a href="https://github.com/oscaralonsoo">Oscar Alonso</a></p>
+    <p class="footer__credits">© Developer Portfolio by <a href="https://github.com/oscaralonsoo" target="_blank">Oscar Alonso</a></p>
     <div class="footer__git">
-      <a href="https://github.com/oscaralonsoo/Portfolio">
+      <a href="https://github.com/oscaralonsoo/Portfolio" target="_blank">
         <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 480 480" height="1em" width="1em"
           xmlns="http://www.w3.org/2000/svg">
           <path
@@ -150,7 +335,7 @@
         </svg>
         <span>STAR</span>
       </a>
-      <a href="">
+      <a href="https://github.com/oscaralonsoo/Portfolio/fork" target="_blank">
         <svg stroke="currentColor" fill="none" stroke-width="0" viewBox="0 0 20 20" height="1em" width="1em"
           xmlns="http://www.w3.org/2000/svg">
           <path
@@ -164,5 +349,8 @@
 </body>
 
 <script src="src/js/skillsBand.js"></script>
+<script src="src/js/scrollReveal.js"></script>
+<script src="src/js/navActive.js"></script>
+<script src="src/js/themeToggle.js"></script>
 
 </html>
