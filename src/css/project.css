@@ -1,4 +1,3 @@
-/* project.css */
 @font-face {
     font-family: Gontserrat-ExtraBold;
     src: url(../../fonts/Gontserrat-ExtraBold.ttf);
@@ -149,9 +148,9 @@
   z-index: 2;
   background: linear-gradient(
     to bottom,
-    rgba(13, 18, 36, 0.3) 0%,
-    rgba(13, 18, 36, 0.65) 40%,
-    rgba(13, 18, 36, 0.85) 70%,
+    rgba(13, 18, 36, 0.2) 0%,
+    rgba(13, 18, 36, 0.4) 40%,
+    rgba(13, 18, 36, 0.1) 70%,
     #0d1224 100%
   );
 }
@@ -298,7 +297,6 @@
   50% { transform: translateX(-50%) translateY(8px); }
 }
 
-/* SECCIONES GENERALES */
 .project-main {
   margin-top: 0;
   background-color: #0d1224;
@@ -778,7 +776,6 @@
   pointer-events: all;
 }
 
-/* Barra de progreso */
 .video-player__progress-area {
   margin-bottom: 10px;
   padding: 6px 0;
@@ -827,7 +824,6 @@
   transform: translate(-50%, -50%) scale(1);
 }
 
-/* Fila inferior de controles */
 .video-player__bottom {
   display: flex;
   align-items: center;
@@ -904,15 +900,6 @@
   pointer-events: none;
 }
 
-/* =========================================================
-   RESPONSIVE
-   Sigue los mismos breakpoints y variable --gutter definidos
-   en styles.css (1024px / 768px / 480px) para que el layout
-   de las páginas de proyecto se mantenga consistente con el
-   resto del sitio.
-   ========================================================= */
-
-/* Tablets / laptops pequeños */
 @media (max-width: 1024px) {
   .project-hero__title {
     font-size: clamp(2.4rem, 6vw, 3.6rem);
@@ -946,7 +933,6 @@
   }
 }
 
-/* Tablets en vertical / móviles grandes */
 @media (max-width: 768px) {
   .project-nav {
     height: auto;
@@ -1116,7 +1102,6 @@
   }
 }
 
-/* Móviles */
 @media (max-width: 480px) {
   .project-nav__link {
     font-size: 0.78rem;

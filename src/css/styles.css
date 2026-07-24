@@ -153,7 +153,7 @@ nav {
 }
 
 .nav__name:hover {
-    opacity: 0.85;
+    opacity: 0.8;
 }
 
 .nav__index {
@@ -225,6 +225,11 @@ nav {
 .nav__social-media a {
     display: flex;
     align-items: center;
+    transition: opacity 0.3s ease;
+}
+
+.nav__social-media a:hover {
+    opacity: 0.8;
 }
 
 .nav__social-media img {
@@ -233,14 +238,10 @@ nav {
     transition: filter 0.3s ease;
 }
 
-/* github.svg / linkedin.svg are white icons baked into the image file,
-   so a CSS variable can't recolor them directly. brightness(0) forces
-   them to solid black so they stay visible on the light background. */
 :root.light-mode .nav__social-media img {
     filter: brightness(0);
 }
 
-/* Theme toggle button (sun / moon) */
 .theme-toggle {
     display: flex;
     align-items: center;
@@ -639,9 +640,6 @@ header::after {
     flex-direction: column;
     justify-content: flex-end;
     padding: 20px;
-    /* Always a dark tint, regardless of theme: this sits on top of a photo,
-       not on top of the page background, so a light-mode tint here would
-       just wash the image out white instead of shading it for text contrast. */
     background: linear-gradient(
         to top,
         rgba(8, 8, 14, 0.9) 0%,
@@ -963,7 +961,6 @@ footer {
     }
 }
 
-/* Tablets in portrait / large phones */
 @media (max-width: 768px) {
     :root {
         --gutter: 6%;
@@ -1051,7 +1048,6 @@ footer {
     }
 }
 
-/* Phones */
 @media (max-width: 480px) {
     :root {
         --gutter: 5.5%;
