@@ -35,15 +35,16 @@
         <h1 class="project-hero__title">Dune Engine</h1>
       </div>
       <div class="project-hero__meta">
-        <span class="project-hero__tag">Unity 3D</span>
-        <span class="project-hero__tag">C#</span>
-        <span class="project-hero__tag">Physics</span>
-        <span class="project-hero__tag">First Person</span>
+        <span class="project-hero__tag">C++</span>
+        <span class="project-hero__tag">OpenGL</span>
+        <span class="project-hero__tag">Assimp</span>
+        <span class="project-hero__tag">SDL3</span>
+        <span class="project-hero__tag">ImGui</span>
       </div>
       <div class="project-hero__button-panel">
         <a href="https://oalonsoo.itch.io/Dune Engine" target="_blank" class="project-btn project-btn--primary">Play
           Game</a>
-        <a href="https://github.com/oscaralonsoo/Dune EnginePillarsOfGlory" target="_blank"
+        <a href="https://github.com/oscaralonsoo/DuneEngine" target="_blank"
           class="project-btn project-btn--secondary">View Github</a>
       </div>
     </div>
@@ -62,11 +63,14 @@
       <div class="project-section__inner">
         <h2 class="project-section__title">Overview</h2>
         <p class="project-overview__description">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer euismod,
-          sapien at suscipit faucibus, neque lectus tincidunt nunc, vitae fermentum
-          turpis lorem nec purus. Vestibulum ante ipsum primis in faucibus orci luctus
-          et ultrices posuere cubilia curae; Sed auctor, libero sed gravida tincidunt,
-          augue nibh facilisis justo, vitae luctus sapien risus non mauris.
+          Dune Engine es un motor de videojuegos desarrollado desde cero en C++
+          utilizando OpenGL. El proyecto implementa los sistemas fundamentales de un
+          engine moderno, incluyendo renderizado, gestión de escenas, editor y
+          herramientas de desarrollo.
+
+          Su desarrollo estuvo orientado a construir una arquitectura modular y
+          escalable, capaz de integrar nuevas funcionalidades mientras reproduce el
+          flujo de trabajo habitual de un motor de videojuegos.
         </p>
         <div class="project-overview__stats">
           <div class="project-stat">
@@ -96,16 +100,17 @@
         <div class="project-role__content">
           <div class="project-role__badge">Engine Programmer</div>
           <p class="project-role__description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id magna
-            tincidunt, cursus lorem vitae, malesuada justo. Pellentesque habitant morbi
-            tristique senectus et netus et malesuada fames ac turpis egestas.
+            Responsable del diseño y desarrollo del motor, implementando los sistemas
+            necesarios para la creación, edición y renderizado de escenas. El proyecto
+            se planteó con una arquitectura modular que facilitara la incorporación de
+            nuevas funcionalidades y sirviera como base para el desarrollo de
+            videojuegos.
           </p>
         </div>
       </div>
     </section>
 
-    <!-- TRAILER -->
-    <section class="project-section project-trailer" id="trailerSection">
+    <!-- <section class="project-section project-trailer" id="trailerSection">
       <div class="project-section__inner">
         <h2 class="project-section__title">Trailer</h2>
 
@@ -169,71 +174,131 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- WHAT I BUILT -->
     <section class="project-section project-tasks">
       <div class="project-section__inner">
         <h2 class="project-section__title">Qué programé</h2>
 
-        <!-- TASK 1 -->
         <div class="project-task">
+
           <div class="project-task__image">
-            <img src="../../public/projects/tasks/Dune Engine-hook.gif" alt="Hook movement and drop">
+            <img src="../../public/projects/tasks/dune-engine-core.png" alt="Engine core architecture">
           </div>
+
           <div class="project-task__text">
-            <h3 class="project-task__title">Lorem ipsum</h3>
+
+            <h3 class="project-task__title">
+              Engine Core & Module System
+            </h3>
+
             <p class="project-task__description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at
-              faucibus erat. Donec viverra, arcu eget tincidunt luctus, lacus elit
-              tristique justo, sed tincidunt libero odio vitae augue.
+              Núcleo del motor encargado de gestionar el ciclo de vida de todos los
+              subsistemas mediante una arquitectura modular. Cada módulo implementa las
+              fases de inicialización, actualización y liberación de recursos,
+              permitiendo desacoplar funcionalidades como el renderer, la escena, el
+              editor o la gestión de recursos y facilitando la escalabilidad del motor.
             </p>
+
           </div>
+
         </div>
 
-        <!-- TASK 2 -->
         <div class="project-task project-task--reverse">
+
           <div class="project-task__image">
-            <img src="../../public/projects/tasks/Dune Engine-weight.gif" alt="Weight detection and platform">
+            <img src="../../public/projects/tasks/dune-engine-renderer.gif" alt="OpenGL renderer">
           </div>
+
           <div class="project-task__text">
-            <h3 class="project-task__title">Detección de Peso y Física Real</h3>
+
+            <h3 class="project-task__title">
+              OpenGL Rendering Pipeline
+            </h3>
+
             <p class="project-task__description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris luctus,
-              lorem sed suscipit hendrerit, neque augue bibendum nunc, sit amet
-              ullamcorper lorem augue nec lacus.
+              Renderer basado en OpenGL con soporte para la importación y representación
+              de modelos 3D mediante Assimp, gestionando automáticamente meshes,
+              materiales y texturas. El sistema genera los buffers necesarios en GPU y
+              renderiza la escena utilizando shaders propios, incorporando además
+              herramientas de depuración como bounding boxes, normales, grids y
+              diferentes modos de visualización.
             </p>
+
           </div>
+
         </div>
 
-        <!-- TASK 3 -->
         <div class="project-task">
+
           <div class="project-task__image">
-            <img src="../../public/projects/tasks/Dune Engine-spawn.gif" alt="Block randomness and progression">
+            <img src="../../public/projects/tasks/dune-engine-components.gif" alt="Component-based scene system">
           </div>
+
           <div class="project-task__text">
-            <h3 class="project-task__title">Aleatoriedad y Progresión de Piezas</h3>
+
+            <h3 class="project-task__title">
+              Component-Based Scene System
+            </h3>
+
             <p class="project-task__description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris luctus,
-              lorem sed suscipit hendrerit, neque augue bibendum nunc, sit amet
-              ullamcorper lorem augue nec lacus.
+              Sistema de escenas basado en GameObjects y componentes, permitiendo
+              combinar elementos como Transform, Mesh Renderer, Camera o Material para
+              construir entidades reutilizables. La jerarquía de objetos mantiene las
+              transformaciones padre-hijo de forma automática, facilitando la
+              organización y gestión de escenas complejas.
             </p>
+
           </div>
+
         </div>
 
-        <!-- TASK 4 -->
         <div class="project-task project-task--reverse">
+
           <div class="project-task__image">
-            <img src="../../public/projects/tasks/Dune Engine-screens.gif" alt="Monitor screens and RenderTexture">
+            <img src="../../public/projects/tasks/dune-engine-editor.gif" alt="Editor and tools">
           </div>
+
           <div class="project-task__text">
-            <h3 class="project-task__title">Pantallas de Monitoreo con RenderTexture</h3>
+
+            <h3 class="project-task__title">
+              Editor & Development Tools
+            </h3>
+
             <p class="project-task__description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris luctus,
-              lorem sed suscipit hendrerit, neque augue bibendum nunc, sit amet
-              ullamcorper lorem augue nec lacus.
+              Editor desarrollado con Dear ImGui que integra las principales herramientas
+              necesarias para la creación y edición de escenas. Incluye ventanas de
+              Hierarchy, Inspector, Console, Configuration y Project, permitiendo
+              modificar componentes en tiempo real, gestionar recursos y visualizar el
+              estado del motor desde una única interfaz.
             </p>
+
           </div>
+
+        </div>
+
+        <div class="project-task">
+
+          <div class="project-task__image">
+            <img src="../../public/projects/tasks/dune-engine-resources.gif" alt="Resource manager">
+          </div>
+
+          <div class="project-task__text">
+
+            <h3 class="project-task__title">
+              Resource Manager & Asset Pipeline
+            </h3>
+
+            <p class="project-task__description">
+              Sistema de gestión de recursos encargado de importar, almacenar y reutilizar
+              modelos, texturas y materiales. Los assets se procesan automáticamente al
+              incorporarse al proyecto, generando versiones optimizadas en la Library y
+              evitando cargas duplicadas mediante un sistema centralizado de recursos.
+            </p>
+
+          </div>
+
         </div>
 
       </div>
